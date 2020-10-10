@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="shortcut icon" href="images/logo.png" type="favicon/png" />
 	</head>
 	<body class="is-preload">
 
@@ -22,7 +23,8 @@
 							<li><a href="#intro" class="active">Home</a></li>
 							<li><a href="#publications">Publications</a></li>
 							<li><a href="#talks">Talks</a></li>
-							<li><a href="#random">Random stuff</a></li>
+							<li><a href="#teaching">Teaching</a></li>
+							<li><a href="#forfun">For fun</a></li>
 							<li><a href="#aboutme">About me</a></li>
 						</ul>
 					</nav>
@@ -83,14 +85,14 @@
 											<td>Proceedings of Design, Automation, and Test in Europe (DATE)</td>
 											<td>2019</td>
 											<td>
-												<a href="https://www.comp.nus.edu.sg/~meel/Papers/date-cscm19.pdf">Paper</a>
+												<a href="https://www.comp.nus.edu.sg/~meel/Papers/date-cscm19.pdf">Paper</a>,
 												<a href="https://github.com/meelgroup/bosphorus">Code</a>
 											</td>
 										</tr>
 										<tr>
 											<td>Chemical Structure Elucidation from Mass Spectrometry by Matching Substructures</td>
 											<td>Jing Lim, Joshua Wong, Minn Xuan Wong, Lee Han Eric Tan, Hai Leong Chieu, <b>Davin Choo</b>, Neng Kai Nigel Neo</td>
-											<td>Machine Learning for Molecules and Materials NeurIPS Workshop</td>
+											<td>Machine Learning for Molecules and Materials (NeurIPS Workshop)</td>
 											<td>2018</td>
 											<td>
 												<a href="https://arxiv.org/pdf/1811.07886.pdf">arXiv</a>
@@ -118,7 +120,7 @@
 											<td><b>Massively Parallel Algorithms</b> (Spring 2019)<br>
 											Lecturer: <a href="https://people.inf.ethz.ch/gmohsen/">Mohsen Ghaffari</a></td>
 											<td>
-												<a href="https://people.inf.ethz.ch/gmohsen/MPA19/">Course webpage</a>,
+												<a href="https://people.inf.ethz.ch/gmohsen/MPA19/">Course webpage</a>, 
 												<a href="http://people.csail.mit.edu/ghaffari/MPA19/Notes/MPA.pdf">Notes</a>
 											</td>
 										</tr>
@@ -127,7 +129,7 @@
 											<td><b>Advanced Algorithms</b> (Fall 2018)<br>
 											Lecturer: <a href="https://people.inf.ethz.ch/gmohsen/">Mohsen Ghaffari</a></td>
 											<td>
-												<a href="http://people.csail.mit.edu/ghaffari/AA18/">Course webpage</a>,
+												<a href="http://people.csail.mit.edu/ghaffari/AA18/">Course webpage</a>, 
 												<a href="http://people.csail.mit.edu/ghaffari/AA18/Notes/AAscript.pdf">Notes</a>
 											</td>
 										</tr>
@@ -141,21 +143,212 @@
 							<header class="major">
 								<h2>Talks</h2>
 							</header>
-							to do
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Event</th>
+											<th>Date (DD.MM.YYYY)</th>
+											<th>Topic</th>
+											<th>Remarks</th>
+											<th>Links</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><a href="https://users.aalto.fi/~uittoj3/seminar.html">Aalto CS Theory Seminar</a></td>
+											<td>29.07.2020</td>
+											<td>k-means++: few more steps yield constant approximation</td>
+											<td>
+												Zoom talk.
+											</td>
+											<td>
+												<a href="https://arxiv.org/pdf/2002.07784.pdf">arXiv</a>
+											</td>
+										</tr>
+										<tr>
+											<td><a href="https://docs.google.com/spreadsheets/d/19iXOPFOMRKJpXsyYxPlzlLUl5PBrJwwgQSFK9-FeCWA/edit?usp=sharing">MADZ Group Meeting talk</a></td>
+											<td>04.05.2020</td>
+											<td>k-means++: few more steps yield constant approximation</td>
+											<td>
+												Zoom talk.
+											</td>
+											<td>
+												<a href="https://arxiv.org/pdf/2002.07784.pdf">arXiv</a>
+											</td>
+										</tr>
+										<tr>
+											<td><a href="https://people.inf.ethz.ch/gmohsen/Reading%20Group/">Reading Group on Discrete and Distributed Algorithms</a></td>
+											<td>23.05.2019</td>
+											<td>Dynamic Algorithms for the Massively Parallel Computation Model</td>
+											<td>
+												Whiteboard talk. Attached are some pictures.
+												<br><br>
+												The paper talks about maintaining an approximate MST but I think an exact MST should be doable. See <a href="files/talks/dmpc/dmpc-mst.pdf">write-up</a> for a sketch.
+												<br>
+												<b>Update</b>: There's a SPAA 2020 <a href="https://arxiv.org/pdf/2002.06762.pdf">paper</a> related to this!
+											</td>
+											<td>
+												<a href="https://arxiv.org/pdf/1905.09175.pdf">arXiv</a>,
+												<a href="files/talks/dmpc/prep1.jpg">pic1</a>,
+												<a href="files/talks/dmpc/prep2.jpg">pic2</a>,
+												<a href="files/talks/dmpc/prep3.jpg">pic3</a>,
+												<a href="files/talks/dmpc/prep4.jpg">pic4</a>,
+												<a href="files/talks/dmpc/prep5.jpg">pic5</a>
+											</td>
+										</tr>
+										<tr>
+											<td>DSO<br> technical sharing</td>
+											<td>02.02.2017</td>
+											<td>2^{To be, or not to be?}: A look at boolean satisfiability</td>
+											<td>
+											State-of-the-art methods building upon DPLL and CDCL are covered. An alternative solving method (Stalmarck's method) is also discussed.
+											<br><br>
+											Animations and some slides removed.
+											</td>
+											<td>
+												<a href="files/talks/dso/DSO_SAT.pdf">Slides</a>
+											</td>
+										</tr>
+										<tr>
+											<td>DSO<br> technical sharing</td>
+											<td>10.11.2016</td>
+											<td>A gentle introduction to community detection</td>
+											<td>
+											Common methods such as graph partitioning and spectral clustering are discussed. Talk is mainly based off a <a href="https://arxiv.org/pdf/0906.0612v2.pdf">survey by Santo Fortuno</a>.
+											<br><br>
+											Animations and some slides removed.
+											</td>
+											<td>
+												<a href="files/talks/dso/DSO_community_detection.pdf">Slides</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</section>
 
-						<!-- Other writings/projects -->
-						<section id="random" class="main special">
+						<!-- Teaching -->
+						<section id="teaching" class="main special">
 							<header class="major">
-								<h2>Random stuff</h2>
+								<h2>Teaching</h2>
 							</header>
-							to do
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Place</th>
+											<th>Course</th>
+											<th>Year</th>
+											<th>Links</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><a href="http://www.nus.edu.sg/">National University<br> of Singapore (NUS)</a></td>
+											<td style="text-align:left">CS3230: Design and Analysis of Algorithms</td>
+											<td>AY 2015/2016 Sem 1</td>
+											<td><a href="https://nusmods.com/modules/CS3230/design-and-analysis-of-algorithms">NUSMODS</a></td>
+										</tr>
+										<tr>
+											<td><a href="http://www.nus.edu.sg/">National University<br> of Singapore (NUS)</a></td>
+											<td style="text-align:left">GET1031: Computational Thinking</td>
+											<td>AY 2015/2016 Sem 2</td>
+											<td><a href="https://nusmods.com/modules/GET1031/computational-thinking">NUSMODS</a></td>
+										</tr>
+										<tr>
+											<td><a href="http://www.nus.edu.sg/">National University<br> of Singapore (NUS)</a></td>
+											<td style="text-align:left">CS2020: Data Structures and Algorithms (Accelerated)</td>
+											<td>
+												AY 2014/2015 Sem 2,
+												<br>
+												AY 2015/2016 Sem 2
+											</td>
+											<td><a href="https://nusmods.com/modules/CS2020/data-structures-and-algorithms-accelerated">NUSMODS</a></td>
+										</tr>
+										<tr>
+											<td><a href="http://www.nus.edu.sg/">National University<br> of Singapore (NUS)</a></td>
+											<td style="text-align:left">CS1101S: Programming Methodology</td>
+											<td>AY 2014/2015 Sem 1</td>
+											<td><a href="https://nusmods.com/modules/CS1101S/programming-methodology">NUSMODS</a></td>
+										</tr>
+										<tr>
+											<td><a href="http://www.nus.edu.sg/">National University<br> of Singapore (NUS)</a></td>
+											<td style="text-align:left">CS1231: Discrete Structures</td>
+											<td>AY 2014/2015 Sem 1</td>
+											<td><a href="https://nusmods.com/modules/CS1231/discrete-structures">NUSMODS</a></td>
+										</tr>
+										<tr>
+											<td><a href="https://www.temasekjc.moe.edu.sg/">Temasek Junior<br> College (TJC)</a></td>
+											<td>Initialized and conducted a 12-week student<br> outreach course on Computer Science</td>
+											<td>Jan 2014 - May 2014</td>
+											<td><a href="files/teaching/TJC_compiled_slides.pdf">Some old, partial<br> teaching material</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</section>
+
+						<!-- For fun -->
+						<section id="forfun" class="main special">
+							<header class="major">
+								<h2>For fun</h2>
+							</header>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Remarks</th>
+											<th>Links</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>IBM Ponder This puzzles</td>
+											<td>Solutions to some IBM's monthly <a href="https://www.research.ibm.com/haifa/ponderthis/">Ponder This</a> puzzles that I attempted.</td>
+											<td><a href="https://github.com/cxjdavin/ibm_ponder_this">Github</a></td>
+										</tr>
+										<tr>
+											<td>Neopets Shapeshifter solver</td>
+											<td>
+												Used this game as a practice while learning about constraint solvers.
+												<br>
+												Wrote a JavaScript to extract the puzzle from Neopets, which can be solved by either of my 2 solvers --- One using Google's <a href="https://developers.google.com/optimization">ortools</a>, one using the <a href="https://www.minizinc.org/">MiniZinc</a> constraint solver.</td>
+											<td><a href="files/for_fun/shapeshifter/">Directory</a></td>
+										</tr>
+										<tr>
+											<td>Telegram Chess Bot</td>
+											<td>Learnt about the existence of <a href="https://core.telegram.org/bots">Telegram bots</a> worked. Hacked up a chess bot for fun.
+												<br>
+												Note: It requires server hosting to work.
+											</td>
+											<td><a href="https://github.com/cxjdavin/tgchessbot">Github</a></td>
+										</tr>
+										<tr>
+											<td>Threshold Secret Sharing Schemes</td>
+											<td>Explored and implemented 3 secret sharing schemes.</td>
+											<td><a href="https://github.com/cxjdavin/thresholdsecretsharing">Github</a></td>
+										</tr>
+										<tr>
+											<td>Cryptopals</td>
+											<td>Solutions to some of the <a href="http://cryptopals.com/">Cryptopals</a> challenges that I attempted.</td>
+											<td><a href="https://github.com/cxjdavin/cryptopals">Github</a></td>
+										</tr>
+										<tr>
+											<td>Cipher encodings</td>
+											<td>A collection of cipher encodings.</td>
+											<td><a href="https://github.com/cxjdavin/cipher_encodings">Github</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</section>
 
 						<!-- About me -->
 							<section id="aboutme" class="main">
 								<div class="content">
-									<header class="major">
+									<header class="major special">
 										<h2>About me</h2>
 									</header>
 									<dl class="alt">
@@ -191,7 +384,7 @@
 									</p>
 
 									<header class="major">
-									<a href="files/Resume_Davin_Choo.pdf">1-page resume</a> (Last updated: July 2020)
+									Here is my <a href="files/Resume_Davin_Choo.pdf">1-page resume</a> (Last updated: July 2020).
 									</header>
 								</div>
 							</section>
