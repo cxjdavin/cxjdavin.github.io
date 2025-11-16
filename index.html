@@ -16,6 +16,44 @@
         <!-- For Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <style>
+      :root{
+        --accent:#4f9cff; --text:#111827;
+        --thead-bg:#f1f5f9; --row-bg:#fff; --row-alt-bg:#f8fafc; --row-hover-bg:#eef2ff;
+        --table-border:#e5e7eb; --chip-bg:rgba(0,0,0,.05);
+      }
+
+      #publications td.authors b {
+        color: #4f9cff;
+        font-weight: 700;
+      }
+
+      /* Filter chips — match tag pills */
+      #pub-filter-chips{ display:flex; flex-wrap:wrap; gap:.4rem; }
+      #pub-filter-chips label{
+        position:relative; display:inline-flex; align-items:center; justify-content:center;
+        font-size:.85em; padding:.2rem .5rem; border-radius:999px;
+        border:1px solid rgba(0,0,0,.15); background:var(--chip-bg); color:inherit;
+        cursor:pointer; user-select:none; transition:background .2s,color .2s,border-color .2s;
+      }
+      #pub-filter-chips input[type="checkbox"]{ position:absolute; opacity:0; pointer-events:none; width:0; height:0; }
+      #pub-filter-chips label:hover{ border-color:var(--accent); }
+      #pub-filter-chips label:has(input[type="checkbox"]:checked){ background:var(--accent); border-color:var(--accent); color:#fff; }
+
+      /* Table + borders that survive filtering */
+      #pub-table{ width:100%; border-collapse:separate; border-spacing:0; border:1px solid var(--table-border); color:var(--text); background:#fff; }
+      #pub-table thead th{ background:var(--thead-bg); padding:12px 14px; border-bottom:1px solid var(--table-border); text-align:left; }
+      #pub-table tbody td{ padding:12px 14px; border-bottom:1px solid var(--table-border); }
+      #pub-table tbody tr.is-visible{ background:var(--row-bg); }
+      #pub-table tbody tr.is-visible.is-odd{ background:var(--row-alt-bg); }
+      #pub-table tbody tr.is-visible:hover{ background:var(--row-hover-bg); }
+      #pub-table tbody tr.is-last td{ border-bottom:none; }
+      #pub-table tbody tr[hidden]{ display:none; }
+
+      /* Tag pills inside the table */
+      .pub-tag-pill{ display:inline-block; padding:.2rem .5rem; border-radius:999px; border:1px solid rgba(0,0,0,.15); font-size:.85em; margin:.1rem .25rem .1rem 0; background:var(--chip-bg); }
+    </style>
 	</head>
 	<body class="is-preload">
 
@@ -46,31 +84,31 @@
 									<header class="major">
 										<h2>Davin Choo</h2>
 									</header>
-                                    <p>
-                                    My work focuses on designing AI and algorithmic solutions for use-inspired and impact-driven research.
-                                    I am particularly interested in problems motivated from real-world scenarios, where careful modeling and principled use of structure can lead to both practical improvements and theoretical insights.
-                                    I also like learning new things and skills.
+                  <p>
+                  My work focuses on designing AI and algorithmic solutions for use-inspired and impact-driven research.
+                  I am particularly interested in problems motivated from real-world scenarios, where careful modeling and principled use of structure can lead to both practical improvements and theoretical insights.
+                  I also like learning new things and skills.
 									If you think you are working on a problem that I might find interesting, do not hesitate to reach out to me to chat about it!
 									</p>
-                                    <p>
-                                    <b>Short bio (for talks, etc)</b>:
-                                    Davin is a postdoctoral fellow at <a href="https://teamcore.seas.harvard.edu/">Teamcore</a>, Harvard University.
-                                    He earned his PhD in Computer Science from the National University of Singapore (NUS) as an <a href="https://aisingapore.org/research/phd-fellowship-programme/">AISG PhD fellow</a>, a Master's degree in Computer Science from ETH Zürich, and two undergraduate degrees in Computer Science and Applied Mathematics from NUS.
-                                    Between his undergraduate and Masters, he also worked for a while as an applied research scientist at <a href="https://www.dso.org.sg/">DSO National Laboratories</a> on projects that lie in the intersection of AI and security.
-                                    During his PhD at NUS, he focused on the foundations of AI and machine learning, working on statistical models, causal inference, and the design of resource-efficient algorithms.
-                                    His current postdoctoral research at Harvard explores how principled algorithmic and AI techniques can be applied to real-world problems with the goal of achieving meaningful social impact.
-                                    </p>
+                  <p>
+                  <b>Short bio (for talks, etc)</b>:
+                  Davin is a postdoctoral fellow at <a href="https://teamcore.seas.harvard.edu/">Teamcore</a>, Harvard University.
+                  He earned his PhD in Computer Science from the National University of Singapore (NUS) as an <a href="https://aisingapore.org/research/phd-fellowship-programme/">AISG PhD fellow</a>, a Master's degree in Computer Science from ETH Zürich, and two undergraduate degrees in Computer Science and Applied Mathematics from NUS.
+                  Between his undergraduate and Masters, he also worked for a while as an applied research scientist at <a href="https://www.dso.org.sg/">DSO National Laboratories</a> on projects that lie in the intersection of AI and security.
+                  During his PhD at NUS, he focused on the foundations of AI and machine learning, working on statistical models, causal inference, and the design of resource-efficient algorithms.
+                  His current postdoctoral research at Harvard explores how principled algorithmic and AI techniques can be applied to real-world problems with the goal of achieving meaningful social impact.
+                  </p>
 									<dl class="alt">
 									<dt>Email</dt>
 									    <dd>davinchoo [at] seas.harvard.edu</dd>
 									<dt>Links</dt>
-                                    <dd>
+                      <dd>
 									    <a href="https://www.linkedin.com/in/davinchoo/"><i class="fa fa-linkedin-square"></i></a>
 									    <a href="https://scholar.google.com.sg/citations?user=cPtzhPsAAAAJ&hl=en"><i class="ai ai-google-scholar-square"></i></a>
-                                        <a href="https://orcid.org/0000-0002-4545-7341"><i class="ai ai-orcid"></i></a>
-                                        <a href="https://github.com/cxjdavin"><i class="fa fa-github-square"></i></a>
-                                    </dd>
-                                    To learn more about me, see <a href="#aboutme">here</a>.
+                      <a href="https://orcid.org/0000-0002-4545-7341"><i class="ai ai-orcid"></i></a>
+                      <a href="https://github.com/cxjdavin"><i class="fa fa-github-square"></i></a>
+                      </dd>
+                      To learn more about me, see <a href="#aboutme">here</a>.
 									</dl>
 								</div>
 								<span class="image"><img src="images/head.jpg" alt="" /></span>
@@ -82,294 +120,192 @@
 							<header class="major">
 								<h2>Publications</h2>
 							</header>
-							<div class="table-wrapper">
-								<table class="alt">
-                                    <colgroup>
-                                        <col span="1" style="width:30%;">
-                                        <col span="1" style="width:25%;">
-                                        <col span="1" style="width:22.5%;">
-                                        <col span="1" style="width:2.5%;">
-                                        <col span="1" style="width:20%;">
-                                    </colgroup>
-									<thead>
-										<tr>
-											<th>Title</th>
-											<th>Authors</th>
-											<th>Venue</th>
-											<th>Year</th>
-											<th>Links</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Adaptive Frontier Exploration on Graphs with Applications to Network-Based Disease Testing</td>
-                                            <td><b>Davin Choo</b>, Yuqi Pan, Tonghan Wang, Milind Tambe, Alastair van Heerden, Cheryl Johnson</td>
-											<td>Conference on Neural Information Processing Systems (NeurIPS)</td>
-                                            <td>2025</td>
-											<td>
-                                                <a href="https://arxiv.org/abs/2505.21671">arXiv</a>
-											</td>
-										</tr>
-										<tr>
-											<td>Learning-Augmented Online Bipartite Fractional Matching</td>
-                                            <td><b>Davin Choo</b>, Billy Jin, Yongho Shin</td>
-											<td>Conference on Neural Information Processing Systems (NeurIPS)</td>
-                                            <td>2025</td>
-											<td>
-                                                <a href="https://arxiv.org/abs/2505.19252">arXiv</a>
-											</td>
-										</tr>
-										<tr>
-											<td>A partition cover approach to tokenization</td>
-                                            <td>Jia Peng Lim, Shawn Tan, <b>Davin Choo</b>, Hady W. Lauw</td>
-											<td>Conference on Neural Information Processing Systems (NeurIPS)</td>
-                                            <td>2025</td>
-											<td>
-                                                <a href="https://arxiv.org/abs/2501.06246">arXiv</a>
-											</td>
-										</tr>
-                                        <tr>
-											<td>Product Distribution Learning with Imperfect Advice</td>
-                                            <td>Arnab Bhattacharyya, <b>Davin Choo</b>, Philips George John, Themis Gouleakis</td>
-											<td>Conference on Neural Information Processing Systems (NeurIPS)</td>
-                                            <td>2025</td>
-											<td>
-                                                arXiv link coming soon
-											</td>
-										</tr>
-										<tr>
-											<td>Learning multivariate Gaussians with imperfect advice</td>
-                                            <td>Arnab Bhattacharyya, <b>Davin Choo</b>, Philips George John, Themis Gouleakis</td>
-                                            <td>International Conference on Machine Learning (ICML)</td>
-                                            <td>2025</td>
-											<td>
-                                                <a href="https://icml.cc/virtual/2025/poster/46687">Conference link</a>,
-                                                <a href="https://arxiv.org/abs/2411.12700">arXiv</a>
-											</td>
-										</tr>
-										<tr>
-											<td>Probably approximately correct high-dimensional causal effect estimation given a valid adjustment set</td>
-                                            <td><b>Davin Choo</b>, Chandler Squires, Arnab Bhattacharyya, David Sontag</td>
-                                            <td>Conference on Causal Learning and Reasoning (CLeaR)</td>
-                                            <td>2025</td>
-											<td>
-                                                <a href="https://www.cclear.cc/2025/FullAgenda">Conference link</a>,
-                                                <a href="https://arxiv.org/abs/2411.08141">arXiv</a>
-											</td>
-										</tr>
-										<tr>
-											<td>Learnability of Parameter-Bounded Bayes Nets</td>
-                                            <td>Arnab Bhattacharyya, <b>Davin Choo</b>, Sutanu Gayen, Dimitrios Myrisiotis</td>
-											<td>AAAI Conference on Artificial Intelligence (AAAI)</td>
-											<td>2025</td>
-											<td>
-                                                <a href="https://ojs.aaai.org/index.php/AAAI/article/view/33708">AAAI</a>,
-                                                <a href="https://arxiv.org/abs/2407.00927">arXiv</a>
-											</td>
-										</tr>
-										<tr>
-											<td>Online bipartite matching with imperfect advice</td>
-                                            <td><b>Davin Choo</b>, Themistoklis Gouleakis, Chun Kai Ling, Arnab Bhattacharyya</td>
-											<td>International Conference on Machine Learning (ICML)</td>
-											<td>2024</td>
-											<td>
-                                                <a href="https://icml.cc/virtual/2024/poster/34946">Conference link</a>,
-                                                <a href="https://proceedings.mlr.press/v235/choo24a.html">ICML</a>,
-                                                <a href="https://github.com/cxjdavin/online-bipartite-matching-with-imperfect-advice">Code</a>,
-                                                <a href="https://arxiv.org/abs/2405.09784">arXiv</a>
-											</td>
-										</tr>
-										<tr>
-                                            <td>Envy-free house allocation with minimum subsidy</td>
-                                            <td><b>Davin Choo</b>, Yan Hao Ling, Warut Suksompong, Nicholas Teh, Jian Zhang</td>
-											<td>Operations Research Letters (ORL)</td>
-											<td>2024</td>
-											<td>
-                                                <a href="https://www.sciencedirect.com/science/article/pii/S0167637724000397">ORL</a>,
-                                                <a href="https://arxiv.org/abs/2403.01162">arXiv</a>
-											</td>
-										</tr>
-										<tr>
-                                            <td>Causal discovery under off-target interventions</td>
-                                            <td><b>Davin Choo</b>, Kirankumar Shiragur, Caroline Uhler</td>
-											<td>International Conference on Artificial Intelligence and Statistics (AISTATS)</td>
-											<td>2024</td>
-											<td>
-                                                <a href="https://proceedings.mlr.press/v238/choo24a.html">AISTATS</a>,
-                                                <a href="https://github.com/cxjdavin/causal-discovery-under-off-target-interventions">Code</a>,
-                                                <a href="https://arxiv.org/abs/2402.08229">arXiv</a>
-											</td>
-										</tr>
-                                        <tr>
-                                            <td>Learning bounded degree polytrees with samples</td>
-                                            <td><b>Davin Choo</b>, Joy Qiping Yang, Arnab Bhattacharyya, Clément L. Canonne</td>
-                                            <td>International Conference on Algorithmic Learning Theory (ALT)</td>
-                                            <td>2024</td>
-                                            <td>
-                                                <a href="http://algorithmiclearningtheory.org/alt2024/accepted-papers/">ALT</a>,
-                                                <a href="https://arxiv.org/abs/2310.06333">arXiv</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>The Sharp Power Law of Local Search on Expanders</td>
-                                            <td>Simina Brânzei, <b>Davin Choo</b>, Nicholas Recker</td>
-                                            <td>Symposium on Discrete Algorithms (SODA)</td>
-                                            <td>2024</td>
-                                            <td>
-                                                <a href="https://epubs.siam.org/doi/abs/10.1137/1.9781611977912.71">SODA</a>,
-                                                <a href="https://arxiv.org/abs/2305.08269">arXiv</a>
-                                            </td>
-                                        </tr>
-										<tr>
-											<td>Learning and Testing Latent-Tree Ising Models Efficiently</td>
-                                            <td>Yuval Dagan, Constantinos Daskalakis, Anthimos-Vardis Kandiros, <b>Davin Choo</b></td>
-											<td>Conference on Learning Theory (COLT)</td>
-											<td>2023</td>
-											<td>
-                                                <a href="https://learningtheory.org/colt2023/abstracts.html#Distribution%20learning%20&%20testing%201">Conference link</a>,
-                                                <a href="https://proceedings.mlr.press/v195/kandiros23a.html">COLT</a>,
-												<a href="https://arxiv.org/abs/2211.13291">arXiv</a>
-											</td>
-										</tr>
-										<tr>
-											<td>Adaptivity Complexity for Causal Graph Discovery</td>
-                                            <td><b>Davin Choo</b>, Kirankumar Shiragur</td>
-											<td>Conference on Uncertainty in Artificial Intelligence (UAI)</td>
-											<td>2023</td>
-											<td>
-                                                <a href="https://proceedings.mlr.press/v216/choo23a.html">UAI</a>,
-                                                <a href="https://github.com/cxjdavin/adaptivity-complexity-for-causal-graph-discovery">Code</a>,
-												<a href="https://arxiv.org/abs/2306.05781">arXiv</a>,
-                                                <a href="https://www.youtube.com/watch?v=hvSdNRR8sXI">Video</a>
-											</td>
-										</tr>
-										<tr>
-											<td>New metrics and search algorithms for weighted causal DAGs</td>
-                                            <td><b>Davin Choo</b>, Kirankumar Shiragur</td>
-											<td>International Conference on Machine Learning (ICML)</td>
-											<td>2023</td>
-											<td>
-                                                <a href="https://icml.cc/virtual/2023/poster/23558">Conference link</a>,
-                                                <a href="https://proceedings.mlr.press/v202/choo23b">ICML</a>,
-                                                <a href="https://github.com/cxjdavin/new-metrics-and-search-algorithms-for-weighted-causal-DAGs">Code</a>,
-												<a href="https://arxiv.org/abs/2305.04445">arXiv</a>
-											</td>
-										</tr>
-										<tr>
-											<td>Active causal structure learning with advice</td>
-                                            <td><b>Davin Choo</b>, Themistoklis Gouleakis, Arnab Bhattacharyya</td>
-											<td>International Conference on Machine Learning (ICML)</td>
-											<td>2023</td>
-											<td>
-                                                <a href="https://icml.cc/virtual/2023/poster/23710">Conference link</a>,
-                                                <a href="https://proceedings.mlr.press/v202/choo23a">ICML</a>,
-                                                <a href="https://github.com/cxjdavin/active-causal-structure-learning-with-advice">Code</a>,
-                                                <a href="https://arxiv.org/abs/2305.19588">arXiv</a>
-											</td>
-										</tr>
-										<tr>
-											<td>Subset verification and search algorithms for causal DAGs</td>
-                                            <td><b>Davin Choo</b>, Kirankumar Shiragur</td>
-											<td>International Conference on Artificial Intelligence and Statistics (AISTATS)</td>
-											<td>2023</td>
-											<td>
-                                                <a href="https://proceedings.mlr.press/v206/choo23a.html">AISTATS</a>,
-                                                <a href="https://github.com/cxjdavin/subset-verification-and-search-algorithms-for-causal-DAGs">Code</a>,
-												<a href="https://arxiv.org/abs/2301.03180">arXiv</a>,
-                                                <a href="https://www.youtube.com/watch?v=SvSmkL-xr-0">Video</a>
-											</td>
-										</tr>
-										<tr>
-											<td>Verification and search algorithms for causal DAGs</td>
-                                            <td><b>Davin Choo</b>, Kirankumar Shiragur, Arnab Bhattacharyya</td>
-											<td>Conference on Neural Information Processing Systems (NeurIPS)</td>
-											<td>2022</td>
-											<td>
-                                                <a href="https://nips.cc/virtual/2022/poster/54621">Conference link</a>,
-                                                <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/5340b0c0b76dc0115f5cc91c20c1251d-Abstract-Conference.html">NeurIPS</a>,
-                                                <a href="https://github.com/cxjdavin/verification-and-search-algorithms-for-causal-DAGs">Code</a>,
-												<a href="https://arxiv.org/abs/2206.15374">arXiv</a>,
-									            <a href="files/talks/neurips2022/verification-and-search-algorithms-for-causal-dags.pdf">Slides</a>,
-									            <a href="files/talks/neurips2022/verification-and-search-algorithms-for-causal-dags-longer.pdf">Longer slides</a>
-											</td>
-										</tr>
-										<tr>
-											<td>Learning Sparse Fixed-Structure Gaussian Bayesian Networks</td>
-											<td>Arnab Bhattacharyya, <b>Davin Choo</b>, Rishikesh Gajjala, Sutanu Gayen, Yuhao Wang</td>
-											<td>International Conference on Artificial Intelligence and Statistics (AISTATS)</td>
-											<td>2022</td>
-											<td>
-                                                <a href="https://proceedings.mlr.press/v151/bhattacharyya22b.html">AISTATS</a>,
-                                                <a href="https://github.com/YohannaWANG/CauchyEst">Code</a>,
-												<a href="https://arxiv.org/abs/2107.10450">arXiv</a>
-											</td>
-										</tr>
-										<tr>
-											<td>The Complexity of Sparse Tensor PCA</td>
-											<td><b>Davin Choo</b>, Tommaso d'Orsi</td>
-											<td>Conference on Neural Information Processing Systems (NeurIPS)</td>
-											<td>2021</td>
-											<td>
-                                                <a href="https://nips.cc/virtual/2021/poster/28223">Conference link</a>,
-                                                <a href="https://proceedings.neurips.cc/paper/2021/hash/42a6845a557bef704ad8ac9cb4461d43-Abstract.html">NeurIPS</a>,
-												<a href="https://arxiv.org/abs/2106.06308">arXiv</a>,
-												<a href="https://slideslive.com/38967471/the-complexity-of-sparse-tensor-pca">Video</a>,
-									            <a href="files/talks/neurips2021/the-complexity-of-sparse-tensor-pca.pdf">Slides</a>
-											</td>
-										</tr>
-										<tr>
-											<td>Massively Parallel Correlation Clustering in Bounded Arboricity Graphs</td>
-											<td>Mélanie Cambus, <b>Davin Choo</b>, Havu Miikonen, Jara Uitto</td>
-											<td>International Symposium on Distributed Computing (DISC)</td>
-											<td>2021</td>
-											<td>
-												<a href="https://drops.dagstuhl.de/opus/volltexte/2021/14817/pdf/LIPIcs-DISC-2021-15.pdf">DISC</a>,
-												<a href="https://arxiv.org/abs/2102.11660">arXiv</a>,
-												<a href="https://www.youtube.com/watch?v=i005NVPBPWs&ab_channel=PODC%E2%80%93DISC">Video</a>
-											</td>
-										</tr>
-										<tr>
-											<td>k-means++: few more steps yield constant approximation</td>
-											<td><b>Davin Choo</b>, Christoph Grunau, Julian Portmann, Václav Rozhoň</td>
-											<td>International Conference on Machine Learning (ICML)</td>
-											<td>2020</td>
-											<td>
-												<a href="https://icml.cc/virtual/2020/poster/6421">Conference link</a>,
-												<a href="http://proceedings.mlr.press/v119/choo20a.html">ICML</a>,
-												<a href="https://arxiv.org/abs/2002.07784">arXiv</a>,
-												<a href="https://slideslive.com/38928151/kmeans-few-more-steps-yield-constant-approximation">Video</a>,
-									            <a href="files/talks/icml2020/k-means++-few-more-steps-yield-constant-approximation.pdf">Slides</a>
-											</td>
-										</tr>
-										<tr>
-											<td>BOSPHORUS: Bridging ANF and CNF Solvers</td>
-											<td><b>Davin Choo</b>, Mate Soos, Kian Ming A. Chai, Kuldeep S. Meel</td>
-											<td>Proceedings of Design, Automation, and Test in Europe (DATE)</td>
-											<td>2019</td>
-											<td>
-                                                <a href="https://ieeexplore.ieee.org/document/8715061">DATE</a>,
-												<a href="https://www.comp.nus.edu.sg/~meel/Papers/date-cscm19.pdf">Paper</a>,
-                                                <a href="https://arxiv.org/abs/1812.04580">arXiv</a>,
-												<a href="https://github.com/meelgroup/bosphorus">Code</a>,
-                                                <a href="https://www.comp.nus.edu.sg/~meel/publications/b2hd-CSCM19.html">Kuldeep's website link</a>
-											</td>
-										</tr>
-										<tr>
-											<td>Chemical Structure Elucidation from Mass Spectrometry by Matching Substructures</td>
-											<td>Jing Lim, Joshua Wong, Minn Xuan Wong, Lee Han Eric Tan, Hai Leong Chieu, <b>Davin Choo</b>, Neng Kai Nigel Neo</td>
-											<td>Machine Learning for Molecules and Materials (NeurIPS Workshop)</td>
-											<td>2018</td>
-											<td>
-												<a href="https://arxiv.org/abs/1811.07886">arXiv</a>
-											</td>
-										</tr>
-									</tbody>
+
+              <!-- Illustration + intro -->
+              <p>
+              My research vision is organized around the following three thrusts, which synergize to bring about real-world impact.
+              Broadly speaking,
+              <strong style="color: rgb(256, 0, 0);">RT1</strong>: Statistical and causal machine learning problems.
+              <strong style="color: rgb(80, 150, 220);">RT2</strong>: Learning-augmented algorithms.
+              <strong style="color:  rgb(256, 192, 0);">RT3</strong>: AI+X.
+              </p>
+              <p>
+                <img src="images/research-flow.png" alt="Overview of research flow" width="60%" height="auto"/>
+              </p>
+              <h6 text-align="left">
+              My peer-reviewed publications listed below are tagged and filterable.
+              Note that author names are sometimes in alphabetical ordering of last names as this is the convention for theory work/venues.
+              </h6>
+
+							<!-- Filters (auto-populated) -->
+              <div id="pub-filters" style="margin: 0 0 1rem;">
+                <div id="pub-filter-chips"></div>
+                <div style="display:flex;gap:.5rem;align-items:center;margin-top:.5rem;">
+                  <button id="pub-clear" type="button">Clear</button>
+                  <button id="pub-select-all" type="button">Select all</button>
+                  <span id="pub-count" style="margin-left:auto;opacity:.75;"></span>
+                </div>
+              </div>
+
+              <div class="table-wrapper">
+                <table class="alt" id="pub-table">
+                  <colgroup>
+                    <col span="1" style="width:28%;">
+                    <col span="1" style="width:24%;">
+                    <col span="1" style="width:18%;">
+                    <col span="1" style="width:6%;">
+                    <col span="1" style="width:12%;"> <!-- Tags -->
+                    <col span="1" style="width:12%;"> <!-- Links -->
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Authors</th>
+                      <th>Venue</th>
+                      <th>Year</th>
+                      <th>Tags</th>
+                      <th>Links</th>
+                    </tr>
+                  </thead>
+                  <tbody><!-- filled by JS below --></tbody>
 								</table>
-                            <h6 text-align="left">
-                            Remark: Author names are in alphabetical ordering (unless they are not). For theory work/venues, it is often standard practice to list authors by alphabetical ordering of last names.
-                            </h6>
 							</div>
 						</section>
+            <script>
+            (() => {
+              const $$ = (sel, ctx=document) => Array.from(ctx.querySelectorAll(sel));
+              const $  = (sel, ctx=document) => ctx.querySelector(sel);
+
+              const table = $('#pub-table');
+              const tbody = $('tbody', table);
+              const chipsEl = $('#pub-filter-chips');
+              const countEl = $('#pub-count');
+
+              // --- 0) Load publications.json, then render + wire filters ---
+              fetch('publications.json')
+                .then(r => r.json())
+                .then(data => {
+                  // 1) Render table rows from JSON
+                  tbody.innerHTML = data.map(row => renderRow(row)).join('');
+
+                  // 2) Build chips from collected data-tags
+                  const rows = $$('tbody tr', table);
+                  
+                  // Collect all labels from rows
+                  let allLabels = Array.from(new Set(
+                    rows.flatMap(r => (r.dataset.tags || '')
+                      .split(',')
+                      .map(s => s.trim())
+                      .filter(Boolean))
+                  ));
+
+                  // Always show these priority tags first
+                  const priority = ['RT1', 'RT2', 'RT3'];
+
+                  // Sort: RT1, RT2, RT3 first, then alphabetical others
+                  allLabels.sort((a, b) => {
+                    const aPriority = priority.indexOf(a);
+                    const bPriority = priority.indexOf(b);
+                    if (aPriority !== -1 && bPriority !== -1) return aPriority - bPriority; // both priority
+                    if (aPriority !== -1) return -1; // a is priority
+                    if (bPriority !== -1) return 1;  // b is priority
+                    return a.localeCompare(b);       // regular alphabetical
+                  });
+
+                  chipsEl.innerHTML = '';
+                  for (const label of allLabels) {
+                    const id = `pub-lab-${label.replace(/[^a-z0-9]+/gi,'-')}`;
+                    const lab = document.createElement('label');
+                    lab.innerHTML = `<input type="checkbox" value="${label}" id="${id}"> ${label}`;
+                    chipsEl.appendChild(lab);
+                  }
+
+                  // 3) Auto-fill tag pills per row from data-tags
+                  for (const r of rows) {
+                    const holder = r.querySelector('.pub-tags');
+                    const tags = (r.dataset.tags || '').split(',').map(s => s.trim()).filter(Boolean);
+                    holder.innerHTML = tags.map(t => `<span class="pub-tag-pill">${t}</span>`).join('');
+                  }
+
+                  // 4) Filtering + zebra+border maintenance
+                  function selectedLabels(){ return $$('input[type="checkbox"]:checked', chipsEl).map(i => i.value); }
+
+                  function applyFilters(){
+                    const sel = selectedLabels();
+                    const rowsNow = $$('tbody tr', table);
+
+                    // reset
+                    rowsNow.forEach(r => {
+                      r.hidden = false;
+                      r.classList.remove('is-visible','is-odd','is-first','is-last');
+                    });
+
+                    // OR filter
+                    const visible = [];
+                    for (const r of rowsNow) {
+                      const tags = (r.dataset.tags || '').split(',').map(s => s.trim()).filter(Boolean);
+                      const ok = sel.length === 0 || sel.some(t => tags.includes(t));
+                      r.hidden = !ok;
+                      if (ok) visible.push(r);
+                    }
+
+                    // mark visible order for striping + borders
+                    visible.forEach((r, i) => {
+                      r.classList.add('is-visible');
+                      if (i % 2 === 1) r.classList.add('is-odd');
+                    });
+                    if (visible.length){
+                      visible[0].classList.add('is-first');
+                      visible[visible.length - 1].classList.add('is-last');
+                    }
+
+                    countEl.textContent = `${visible.length} shown / ${rowsNow.length} total`;
+                  }
+
+                  chipsEl.addEventListener('change', applyFilters);
+                  $('#pub-clear').addEventListener('click', () => {
+                    $$('input[type="checkbox"]', chipsEl).forEach(i => (i.checked = false));
+                    applyFilters();
+                  });
+                  $('#pub-select-all').addEventListener('click', () => {
+                    $$('input[type="checkbox"]', chipsEl).forEach(i => (i.checked = true));
+                    applyFilters();
+                  });
+
+                  applyFilters(); // initial
+                });
+
+              // --- helper to render a <tr> from JSON row ---
+              function renderRow(row){
+                const tags = (row.tags || []).map(t => String(t).trim()).filter(Boolean);
+                const dataTags = tags.join(', ');
+                const links = (row.links || [])
+                  .map(l => `<a href="${l.href}">${escapeHtml(l.label)}</a>`)
+                  .join(', ');
+
+                return `
+                  <tr data-tags="${escapeHtmlAttr(dataTags)}">
+                    <td>${escapeHtml(row.title)}</td>
+                    <td class="authors">${row.authors}</td>
+                    <td>${escapeHtml(row.venue)}</td>
+                    <td>${escapeHtml(row.year)}</td>
+                    <td class="pub-tags"></td>
+                    <td>${links}</td>
+                  </tr>`;
+              }
+
+              // --- tiny escapers ---
+              function escapeHtml(s=''){
+                return String(s)
+                  .replaceAll('&','&amp;')
+                  .replaceAll('<','&lt;')
+                  .replaceAll('>','&gt;')
+                  .replaceAll('"','&quot;')
+                  .replaceAll("'",'&#39;');
+              }
+              function escapeHtmlAttr(s=''){ return escapeHtml(s); }
+            })();
+            </script>
 
 						<!-- Other writings -->
 						<section id="otherwritings" class="main special">
@@ -378,75 +314,67 @@
 							</header>
 							<div class="table-wrapper">
 								<table class="alt">
-                                    <colgroup>
-                                        <col span="1" style="width:30%;">
-                                        <col span="1" style="width:50%;">
-                                        <col span="1" style="width:20%;">
-                                    </colgroup>
-									<thead>
-										<tr>
-											<th>Title</th>
-											<th>Remarks</th>
-											<th>Links</th>
-										</tr>
-									</thead>
-									<tbody>
+                <colgroup>
+                    <col span="1" style="width:30%;">
+                    <col span="1" style="width:50%;">
+                    <col span="1" style="width:20%;">
+                </colgroup>
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Remarks</th>
+										<th>Links</th>
+									</tr>
+								</thead>
+								<tbody>
 										<tr>
 											<td>Approximate Proportionality in Online Fair Division</td>
-                                            <td>Joint work with Winston Fu, Derek Khu, Tzeh Yuan Neoh, Tze-Yang Poon, Nicholas Teh</td>
+                      <td>Joint work with Winston Fu, Derek Khu, Tzeh Yuan Neoh, Tze-Yang Poon, Nicholas Teh</td>
 											<td>
-                                                arXiv link coming soon
-											</td>
-										</tr>
-										<tr>
-											<td>Optimizing Health Coverage in Ethiopia: A Learning-augmented Approach and Persistent Proportionality Under an Online Budget</td>
-                                            <td>Joint work with Yohai Trabelsi, Fentabil Getnet, Samson Warkaye Lamma, Wondesen Nigatu, Kasahun Sime, Lisa Matay, Milind Tambe, Stéphane Verguet</td>
-											<td>
-                                                arXiv link coming soon
+                      arXiv link coming soon
 											</td>
 										</tr>
 										<tr>
 											<td>Learning Probabilistic and Causal Models with(out) Imperfect Advice</td>
-                                            <td>My PhD thesis!</td>
+                      <td>My PhD thesis!</td>
 											<td>
-                                                <a href="files/davin-phd-thesis.pdf">PhD Thesis</a>
+                      <a href="files/davin-phd-thesis.pdf">PhD Thesis</a>
 											</td>
 										</tr>
-                                        <tr>
+                    <tr>
 											<td>A short note about the learning-augmented secretary problem</td>
-                                            <td>Joint work with Chun Kai Ling</td>
+                      <td>Joint work with Chun Kai Ling</td>
 											<td>
-                                                <a href="https://arxiv.org/abs/2410.06583">arXiv</a>
+                      <a href="https://arxiv.org/abs/2410.06583">arXiv</a>
 											</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Template for NUS SoC Thesis (and Thesis Proposal)</td>
-                                            <td>-</td>
-                                            <td><a href="https://www.overleaf.com/read/nhfvyxskbrvn#be38c9/">Overleaf (Read-only)</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Uncovering Causal Relationships Using Adaptive Interventions</td>
-                                            <td>General audience research article</td>
-                                            <td><a href="https://connect.aisingapore.org/2023/10/uncovering-causal-relationships-using-adaptive-interventions/">AISG ConnectAI article</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Template for NUS SoC QE talk slides</td>
-                                            <td>-</td>
-                                            <td><a href="https://www.overleaf.com/read/drgkpfcncsmg/">Overleaf (Read-only)</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Template for NUS SoC QE report</td>
-                                            <td>-</td>
-                                            <td><a href="https://www.overleaf.com/read/kjqtyqpvkrmr/">Overleaf (Read-only)</a></td>
-                                        </tr>
+                    </tr>
+                    <tr>
+                        <td>Template for NUS SoC Thesis (and Thesis Proposal)</td>
+                        <td>-</td>
+                        <td><a href="https://www.overleaf.com/read/nhfvyxskbrvn#be38c9/">Overleaf (Read-only)</a></td>
+                    </tr>
+                    <tr>
+                        <td>Uncovering Causal Relationships Using Adaptive Interventions</td>
+                        <td>General audience research article</td>
+                        <td><a href="https://connect.aisingapore.org/2023/10/uncovering-causal-relationships-using-adaptive-interventions/">AISG ConnectAI article</a></td>
+                    </tr>
+                    <tr>
+                        <td>Template for NUS SoC QE talk slides</td>
+                        <td>-</td>
+                        <td><a href="https://www.overleaf.com/read/drgkpfcncsmg/">Overleaf (Read-only)</a></td>
+                    </tr>
+                    <tr>
+                        <td>Template for NUS SoC QE report</td>
+                        <td>-</td>
+                        <td><a href="https://www.overleaf.com/read/kjqtyqpvkrmr/">Overleaf (Read-only)</a></td>
+                    </tr>
 										<tr>
 											<td>Scribe notes for entire course</td>
 											<td><b>Massively Parallel Algorithms</b> (Spring 2019)<br>
 											Lecturer: <a href="https://people.inf.ethz.ch/gmohsen/">Mohsen GHAFFARI</a></td>
 											<td>
 												<a href="https://people.inf.ethz.ch/gmohsen/MPA19/">Course webpage</a>,
-                                                <a href="files/notes/notes_MPA19.pdf">Notes</a>
+                        <a href="files/notes/notes_MPA19.pdf">Notes</a>
 											</td>
 										</tr>
 										<tr>
@@ -455,7 +383,7 @@
 											Lecturer: <a href="https://people.inf.ethz.ch/gmohsen/">Mohsen GHAFFARI</a></td>
 											<td>
 												<a href="http://people.inf.ethz.ch/gmohsen/AA18/">Course webpage</a>,
-                                                <a href="files/notes/notes_AA18.pdf">Notes</a>
+                        <a href="files/notes/notes_AA18.pdf">Notes</a>
 											</td>
 										</tr>
 									</tbody>
@@ -464,7 +392,7 @@
 						</section>
 
 						<!-- Talks -->
-                        <style>td { vertical-align: middle; }</style>
+            <style>td { vertical-align: middle; }</style>
 						<section id="talks" class="main special">
 							<header class="major">
 								<h2>Talks</h2>
@@ -481,116 +409,116 @@
 										</tr>
 									</thead>
 									<tbody>
-                                        <tr>
-											<td>NUS AlgoTheory Seminar</td>
-                                            <td>28.08.2025</td>
-                                            <td>Principled AI for Real-world Impact: Structured Decision-Making under Uncertainty</td>
-                                            <td>NUS, Meeting Room 24 @ COM3 (COM3-02-64)</td>
-                                            <td rowspan="4">
-                                                <a href="files/talks/aug2025/short.pdf">Slides (short)</a>
-                                                <br><br>
-                                                <a href="files/talks/aug2025/long.pdf">Slides (long)</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-											<td>Connect and Engage with NUS 2025</td>
-                                            <td>26.08.2025</td>
-                                            <td>Principled AI for Real-world Impact: Structured Decision-Making under Uncertainty</td>
-                                            <td>NUS, Multi Purpose Hall (MPH), COM3-01</td>
-                                        </tr>
-                                        <tr>
-											<td>NTU College of Computing and Data Science (CCDS) Research Seminar</td>
-                                            <td>20.08.2025</td>
-                                            <td>Principled AI for Real-world Impact: Structured Decision-Making under Uncertainty</td>
-                                            <td>NTU, LT16, NS1-04-05</td>
-                                        </tr>
-                                        <tr>
-											<td>SMU School of Computing and Information Systems (SCIS) Research Seminar</td>
-                                            <td>18.08.2025</td>
-                                            <td>Principled AI for Real-world Impact: Structured Decision-Making under Uncertainty</td>
-                                            <td>SMU, SCIS 1, Level 5, Meeting Room 5-1</td>
-                                        </tr>
-                                        <tr>
-											<td><a href="https://events.comp.nus.edu.sg/view/23445">PhD Defence</a></td>
-                                            <td>13.01.2025</td>
-                                            <td>Learning Probabilistic and Causal Models with(out) Imperfect Advice</td>
-                                            <td>Zoom</td>
-                                            <td>
-                                                <a href="files/talks/phd-defense/phd-defense.pdf">Slides</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-											<td><a href="https://www.dso.org.sg/research/information">DSO</a><br> technical sharing</td>
-                                            <td>03.10.2024</td>
-                                            <td>Algorithms for Learning Probabilistic and Causal Models with Possible Imperfect Advice</td>
-                                            <td><a href="https://www.facebook.com/watch/?v=1900622903516821">DSO Playground</a></td>
-                                            <td>
-                                                <a href="files/talks/phd-defense/doctoral-seminar.pdf">Slides</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="https://events.comp.nus.edu.sg/view/22869">Doctoral Seminar</a></td>
-                                            <td>09.09.2024</td>
-                                            <td>Algorithms for Learning Probabilistic and Causal Models with Possible Imperfect Advice</td>
-                                            <td>NUS, SR12, COM3 01-21</td>
-                                            <td>
-                                                <a href="files/talks/phd-defense/doctoral-seminar.pdf">Slides</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="https://samsonzhou.github.io/ttic-2024-workshop-learning-augmented.html">Workshop on Learning-Augmented Algorithms</a></td>
-                                            <td>19.08.2024</td>
-                                            <td>Online bipartite matching with imperfect advice (Lightning talk)</td>
-                                            <td>TTIC, Chicago, IL</td>
-                                            <td>
-                                                <a href="https://arxiv.org/abs/2405.09784">Paper</a>,
-                                                <a href="files/talks/learning-augmented-workshop/Online bipartite matching with imperfect advice (TTIC lightning talk).pdf">Slides</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="https://algotheoryseminar.comp.nus.edu.sg/">NUS AlgoTheory Seminar</a></td>
-                                            <td>10.06.2024</td>
-                                            <td>Online bipartite matching with imperfect advice</td>
-                                            <td>NUS, MR-20 @ COM3 (COM3-02-59)</td>
-                                            <td>
-                                                <a href="https://arxiv.org/abs/2405.09784">Paper</a>,
-                                                <a href="files/talks/nus-algotheory/Online bipartite matching with imperfect advice.pdf">Slides</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="https://algotheoryseminar.comp.nus.edu.sg/">NUS AlgoTheory Seminar</a></td>
-                                            <td>08.04.2024</td>
-                                            <td>Envy-free house allocation with minimum subsidy</td>
-                                            <td>NUS, MR-20 @ COM3 (COM3-02-59)</td>
-                                            <td>
-                                                <a href="https://www.sciencedirect.com/science/article/pii/S0167637724000397">Paper</a>,
-                                                <a href="files/talks/nus-algotheory/Envy-free house allocation with minimum subsidy.pdf">Slides</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Guest presentation at <a href="https://nusmods.com/courses/CS6235/advanced-topics-in-theoretical-computer-science">CS6235</a></td>
-                                            <td>03.04.2024</td>
-                                            <td>Envy-free house allocation with minimum subsidy</td>
-                                            <td>NUS, SR@LT19</td>
-                                            <td>
-                                                <a href="https://www.sciencedirect.com/science/article/pii/S0167637724000397">Paper</a>,
-                                                <a href="files/talks/nus-algotheory/Envy-free house allocation with minimum subsidy.pdf">Slides</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="https://sites.google.com/site/diveshhomepage">Divesh</a>'s research group <a href="https://sites.google.com/view/seminar-divesh/">weekly seminar</a></td>
-                                            <td>15.03.2024</td>
-                                            <td>Online bipartite matching with imperfect advice</td>
-                                            <td>NUS, COM3-02-70. Whiteboard talk</td>
-                                            <td>-</td>
-                                        </tr>
+                      <tr>
+                        <td>NUS AlgoTheory Seminar</td>
+                        <td>28.08.2025</td>
+                        <td>Principled AI for Real-world Impact: Structured Decision-Making under Uncertainty</td>
+                        <td>NUS, Meeting Room 24 @ COM3 (COM3-02-64)</td>
+                        <td rowspan="4">
+                            <a href="files/talks/aug2025/short.pdf">Slides (short)</a>
+                            <br><br>
+                            <a href="files/talks/aug2025/long.pdf">Slides (long)</a>
+                        </td>
+                      </tr>
+                      <tr>
+											 <td>Connect and Engage with NUS 2025</td>
+                        <td>26.08.2025</td>
+                        <td>Principled AI for Real-world Impact: Structured Decision-Making under Uncertainty</td>
+                        <td>NUS, Multi Purpose Hall (MPH), COM3-01</td>
+                      </tr>
+                      <tr>
+                        <td>NTU College of Computing and Data Science (CCDS) Research Seminar</td>
+                        <td>20.08.2025</td>
+                        <td>Principled AI for Real-world Impact: Structured Decision-Making under Uncertainty</td>
+                        <td>NTU, LT16, NS1-04-05</td>
+                      </tr>
+                      <tr>
+                        <td>SMU School of Computing and Information Systems (SCIS) Research Seminar</td>
+                        <td>18.08.2025</td>
+                        <td>Principled AI for Real-world Impact: Structured Decision-Making under Uncertainty</td>
+                        <td>SMU, SCIS 1, Level 5, Meeting Room 5-1</td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://events.comp.nus.edu.sg/view/23445">PhD Defence</a></td>
+                        <td>13.01.2025</td>
+                        <td>Learning Probabilistic and Causal Models with(out) Imperfect Advice</td>
+                        <td>Zoom</td>
+                        <td>
+                            <a href="files/talks/phd-defense/phd-defense.pdf">Slides</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://www.dso.org.sg/research/information">DSO</a><br> technical sharing</td>
+                        <td>03.10.2024</td>
+                        <td>Algorithms for Learning Probabilistic and Causal Models with Possible Imperfect Advice</td>
+                        <td><a href="https://www.facebook.com/watch/?v=1900622903516821">DSO Playground</a></td>
+                        <td>
+                            <a href="files/talks/phd-defense/doctoral-seminar.pdf">Slides</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://events.comp.nus.edu.sg/view/22869">Doctoral Seminar</a></td>
+                        <td>09.09.2024</td>
+                        <td>Algorithms for Learning Probabilistic and Causal Models with Possible Imperfect Advice</td>
+                        <td>NUS, SR12, COM3 01-21</td>
+                        <td>
+                            <a href="files/talks/phd-defense/doctoral-seminar.pdf">Slides</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://samsonzhou.github.io/ttic-2024-workshop-learning-augmented.html">Workshop on Learning-Augmented Algorithms</a></td>
+                        <td>19.08.2024</td>
+                        <td>Online bipartite matching with imperfect advice (Lightning talk)</td>
+                        <td>TTIC, Chicago, IL</td>
+                        <td>
+                            <a href="https://arxiv.org/abs/2405.09784">Paper</a>,
+                            <a href="files/talks/learning-augmented-workshop/Online bipartite matching with imperfect advice (TTIC lightning talk).pdf">Slides</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://algotheoryseminar.comp.nus.edu.sg/">NUS AlgoTheory Seminar</a></td>
+                        <td>10.06.2024</td>
+                        <td>Online bipartite matching with imperfect advice</td>
+                        <td>NUS, MR-20 @ COM3 (COM3-02-59)</td>
+                        <td>
+                            <a href="https://arxiv.org/abs/2405.09784">Paper</a>,
+                            <a href="files/talks/nus-algotheory/Online bipartite matching with imperfect advice.pdf">Slides</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://algotheoryseminar.comp.nus.edu.sg/">NUS AlgoTheory Seminar</a></td>
+                        <td>08.04.2024</td>
+                        <td>Envy-free house allocation with minimum subsidy</td>
+                        <td>NUS, MR-20 @ COM3 (COM3-02-59)</td>
+                        <td>
+                            <a href="https://www.sciencedirect.com/science/article/pii/S0167637724000397">Paper</a>,
+                            <a href="files/talks/nus-algotheory/Envy-free house allocation with minimum subsidy.pdf">Slides</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Guest presentation at <a href="https://nusmods.com/courses/CS6235/advanced-topics-in-theoretical-computer-science">CS6235</a></td>
+                        <td>03.04.2024</td>
+                        <td>Envy-free house allocation with minimum subsidy</td>
+                        <td>NUS, SR@LT19</td>
+                        <td>
+                            <a href="https://www.sciencedirect.com/science/article/pii/S0167637724000397">Paper</a>,
+                            <a href="files/talks/nus-algotheory/Envy-free house allocation with minimum subsidy.pdf">Slides</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://sites.google.com/site/diveshhomepage">Divesh</a>'s research group <a href="https://sites.google.com/view/seminar-divesh/">weekly seminar</a></td>
+                        <td>15.03.2024</td>
+                        <td>Online bipartite matching with imperfect advice</td>
+                        <td>NUS, COM3-02-70. Whiteboard talk</td>
+                        <td>-</td>
+                    </tr>
 										<tr>
 											<td><a href="https://docs.google.com/spreadsheets/d/1VWWD3MmFr3soLEmqE6ksmUxVOYsnclPxjfkAfT7lOQI/edit#gid=1749323056">MPI EI Tea talks</a></td>
 											<td>10.08.2023</td>
 											<td>Recovering causal graphs with adaptive interventions</td>
 											<td>MPI, N 4.022</td>
 											<td>
-									            <a href="files/talks/MPI-tea-talk/Recovering causal graphs with adaptive interventions.pdf">Slides</a>
+						            <a href="files/talks/MPI-tea-talk/Recovering causal graphs with adaptive interventions.pdf">Slides</a>
 											</td>
 										</tr>
 										<tr>
@@ -599,7 +527,7 @@
 											<td>Learning causal DAGs using adaptive interventions</td>
 											<td>NUS, Seminar Room @ LT19 (BIZ 2)</td>
 											<td>
-									            <a href="files/talks/nus-algotheory/Learning causal DAGs using adaptive interventions.pdf">Slides</a>
+						            <a href="files/talks/nus-algotheory/Learning causal DAGs using adaptive interventions.pdf">Slides</a>
 											</td>
 										</tr>
 										<tr>
@@ -608,7 +536,7 @@
 											<td>Solving problems using imperfect advice</td>
 											<td>NUS, COM3-02-59</td>
 											<td>
-									            <a href="files/talks/nus-algotheory/Solving problems using imperfect advice.pdf">Slides</a>
+						            <a href="files/talks/nus-algotheory/Solving problems using imperfect advice.pdf">Slides</a>
 											</td>
 										</tr>
 										<tr>
@@ -618,7 +546,7 @@
 											<td>NUS, LT19 Seminar Room</td>
 											<td>
 												<a href="http://www.cs.toronto.edu/~emicha/papers/fair-partition.pdf">Paper</a>,
-									            <a href="files/talks/cs6235/CS6235-Partitioning-Friends-Fairly-Davin.pdf">Slides</a>
+						            <a href="files/talks/cs6235/CS6235-Partitioning-Friends-Fairly-Davin.pdf">Slides</a>
 											</td>
 										</tr>
 										<tr>
@@ -627,7 +555,7 @@
 											<td>Learning Causal DAGs using Adaptive Interventions</td>
 											<td>NUS, Multipurpose Hall 1 (COM3-01-26)</td>
 											<td>
-									            <a href="files/talks/openhouse2023/openhouse2023davin.pdf">Slides</a>
+						            <a href="files/talks/openhouse2023/openhouse2023davin.pdf">Slides</a>
 											</td>
 										</tr>
 										<tr>
@@ -647,7 +575,7 @@
 											<td>Zoom talk and discussion</td>
 											<td>
 												<a href="https://imada.sdu.dk/~lenem/Research/adviceSurvey.pdf">Paper</a>,
-                                                <a href="https://docs.google.com/presentation/d/14mZKhOqty0D7zeHgnMwXnUAkoRXNUh9HpK_x4MXeP9I/edit?usp=sharing">Slides</a>
+                        <a href="https://docs.google.com/presentation/d/14mZKhOqty0D7zeHgnMwXnUAkoRXNUh9HpK_x4MXeP9I/edit?usp=sharing">Slides</a>
 											</td>
 										</tr>
 										<tr>
@@ -800,34 +728,34 @@
 							</div>
 						</section>
 
-                        <!-- Service -->
-                        <section id="service" class="main special">
-                            <header class="major">
-                                <h2>Service</h2>
-                            </header>
-                            <ul align=left>
-                                <li><b>Reviewer</b> for International Conference on Artificial Intelligence and Statistics (AISTATS), 2026</li>
-                                <li><b>Reviewer</b> for Innovations in Theoretical Computer Science (ITCS), 2026</li>
-                                <li><b>Program Committee</b> for AAAI Conference on Artificial Intelligence (AAAI) Social Impact Track, 2026</li>
-                                <li><b>Program Committee</b> for AAAI Conference on Artificial Intelligence (AAAI) Main Track, 2026</li>
-                                <li><b>Reviewer</b> for Conference on Neural Information Processing Systems (NeurIPS), 2025</li>
-                                <li><b>Reviewer</b> for Transactions on Machine Learning Research (TMLR), 2025</li>
-                                <li><b>Reviewer</b> for International Conference on Machine Learning (ICML), 2025</li>
-                                <li><b>Reviewer</b> for International Joint Conference on Artificial Intelligence (IJCAI), 2025</li>
-                                <li><b>Reviewer</b> for Conference on Neural Information Processing Systems (NeurIPS), 2024; <b>Top reviewer</b></li>
-                                <li><b>Reviewer</b> for International Conference on Machine Learning (ICML), 2024</li>
-                                <li><b>Reviewer</b> for International Joint Conference on Artificial Intelligence (IJCAI), 2024</li>
-                                <li><b>Reviewer</b> for International Conference on Artificial Intelligence and Statistics (AISTATS), 2024</li>
-                                <li><b>Subreviewer</b> for Innovations in Theoretical Computer Science (ITCS), 2024</li>
-                                <li><b>Reviewer</b> for Conference on Neural Information Processing Systems (NeurIPS), 2023; <b>Top reviewer</b></li>
-                                <li><b>Subreviewer</b> for Symposium on Theory of Computing (STOC), 2023</li>
-                                <li><b>Subreviewer</b> for International Colloquium on Automata, Languages, and Programming (ICALP), 2023</li>
-                                <li><b>Reviewer</b> for International Conference on Artificial Intelligence and Statistics (AISTATS), 2023</li>
-                                <li><b>Subreviewer</b> for Conference on Learning Theory (COLT), 2022</li>
-                                <li><b>Subreviewer</b> for Scandinavian Symposium and Workshops on Algorithm Theory (SWAT), 2022</li>
-                                <li><b>Subreviewer</b> for European Symposium on Algorithms (ESA), 2020</li>
-                            </ul>
-                        </section>
+            <!-- Service -->
+            <section id="service" class="main special">
+                <header class="major">
+                    <h2>Service</h2>
+                </header>
+                <ul align=left>
+                    <li><b>Reviewer</b> for International Conference on Artificial Intelligence and Statistics (AISTATS), 2026</li>
+                    <li><b>Reviewer</b> for Innovations in Theoretical Computer Science (ITCS), 2026</li>
+                    <li><b>Program Committee</b> for AAAI Conference on Artificial Intelligence (AAAI) Social Impact Track, 2026</li>
+                    <li><b>Program Committee</b> for AAAI Conference on Artificial Intelligence (AAAI) Main Track, 2026</li>
+                    <li><b>Reviewer</b> for Conference on Neural Information Processing Systems (NeurIPS), 2025</li>
+                    <li><b>Reviewer</b> for Transactions on Machine Learning Research (TMLR), 2025</li>
+                    <li><b>Reviewer</b> for International Conference on Machine Learning (ICML), 2025</li>
+                    <li><b>Reviewer</b> for International Joint Conference on Artificial Intelligence (IJCAI), 2025</li>
+                    <li><b>Reviewer</b> for Conference on Neural Information Processing Systems (NeurIPS), 2024; <b>Top reviewer</b></li>
+                    <li><b>Reviewer</b> for International Conference on Machine Learning (ICML), 2024</li>
+                    <li><b>Reviewer</b> for International Joint Conference on Artificial Intelligence (IJCAI), 2024</li>
+                    <li><b>Reviewer</b> for International Conference on Artificial Intelligence and Statistics (AISTATS), 2024</li>
+                    <li><b>Subreviewer</b> for Innovations in Theoretical Computer Science (ITCS), 2024</li>
+                    <li><b>Reviewer</b> for Conference on Neural Information Processing Systems (NeurIPS), 2023; <b>Top reviewer</b></li>
+                    <li><b>Subreviewer</b> for Symposium on Theory of Computing (STOC), 2023</li>
+                    <li><b>Subreviewer</b> for International Colloquium on Automata, Languages, and Programming (ICALP), 2023</li>
+                    <li><b>Reviewer</b> for International Conference on Artificial Intelligence and Statistics (AISTATS), 2023</li>
+                    <li><b>Subreviewer</b> for Conference on Learning Theory (COLT), 2022</li>
+                    <li><b>Subreviewer</b> for Scandinavian Symposium and Workshops on Algorithm Theory (SWAT), 2022</li>
+                    <li><b>Subreviewer</b> for European Symposium on Algorithms (ESA), 2020</li>
+                </ul>
+            </section>
 
 						<!-- For fun -->
 						<section id="forfun" class="main special">
@@ -844,11 +772,11 @@
 										</tr>
 									</thead>
 									<tbody>
-                                        <tr>
-                                            <td>Recommendations for visiting Singapore</td>
-                                            <td>I have had given recommendations to various people on multiple occasions so I thought it would be nice to collate it somewhere so that I can just point to a link in the future :)</td>
-                                            <td><a href="visitingsingapore.html">Internal link</a></td>
-                                        </tr>
+                    <tr>
+                        <td>Recommendations for visiting Singapore</td>
+                        <td>I have had given recommendations to various people on multiple occasions so I thought it would be nice to collate it somewhere so that I can just point to a link in the future :)</td>
+                        <td><a href="visitingsingapore.html">Internal link</a></td>
+                    </tr>
 										<tr>
 											<td>IBM Ponder This puzzles</td>
 											<td>Solutions to some IBM's monthly <a href="https://www.research.ibm.com/haifa/ponderthis/">Ponder This</a> puzzles that I attempted.</td>
@@ -897,7 +825,7 @@
 										<h2>About me</h2>
 									</header>
 									<dl class="alt">
-                                        <dt style="width:15em">
+                      <dt style="width:15em">
 											<span style="font-size:125%">Postdoc</span><br>
 											<span style="font-size:75%">Computer Science</span><br>
 											<span style="font-size:75%"><a href="https://teamcore.seas.harvard.edu/team/">Teamcore</a></span>
@@ -908,14 +836,14 @@
 										<dt style="width:15em">
 											<span style="font-size:125%">PhD</span><br>
 											<span style="font-size:75%">Computer Science</span><br>
-                                            <span style="font-size:75%"><a href="files/davin-phd-thesis.pdf">PhD Thesis</a></span>
-                                            <br>
-                                            <br>
+                      <span style="font-size:75%"><a href="files/davin-phd-thesis.pdf">PhD Thesis</a></span>
+                      <br>
+                      <br>
 										</dt>
 										<dd><a href="http://www.nus.edu.sg/">National University of Singapore (NUS)</a></dd>
 										<dd>PhD advisor: <a href="https://www.dcs.warwick.ac.uk/~u2470130/">Arnab BHATTACHARYYA</a></dd>
-                                        <dd>PhD co-advisor: <a href="https://www.comp.nus.edu.sg/~gilbert/">Seth GILBERT</a></dd>
-                                        <br>
+                    <dd>PhD co-advisor: <a href="https://www.comp.nus.edu.sg/~gilbert/">Seth GILBERT</a></dd>
+                    <br>
 										<dt style="width:15em">
 											<span style="font-size:125%">Masters</span><br>
 											<span style="font-size:75%">Computer Science</span>
@@ -938,26 +866,26 @@
 											<span style="font-size:125%">Undergraduate</span><br>
 											<span style="font-size:75%">Applied Mathematics</span><br>
 											<span style="font-size:75%">First Class Honours</span><br>
-                                        <span style="font-size:75%">NUS <a href="https://usp.nus.edu.sg/">University Scholars Programme (USP)</a></span>
+                      <span style="font-size:75%">NUS <a href="https://usp.nus.edu.sg/">University Scholars Programme (USP)</a></span>
 										</dt>
 										<dd><a href="http://www.nus.edu.sg/">National University of Singapore (NUS)</a></dd>
 										<dd>Thesis advisor: <a href="https://www.comp.nus.edu.sg/~fstephan/">Frank STEPHAN</a></dd>
 									</dl>
 
-                                    <b>Awards</b> (that I am grateful for receiving)
-                                    <ul>
-                                        <li><a href="https://www.nus.edu.sg/careers/wp-content/uploads/2025/04/NUS-development-grant.pdf">NUS Development Grant</a> (Awarded in 2025)</li>
-                                        <li>NUS School of Computing Research Achievement Award (<a href="https://www.comp.nus.edu.sg/programmes/pg/awards/deans-research/">Awarded in 2023</a>)</li>
-                                        <li><a href="https://aisingapore.org/research/phd-fellowship-programme/">AISG PhD Fellowship</a> (Awarded in 2021)</li>
-                                        <li>President's Honour Roll, USP Scholar (<a href="https://www.usp.nus.edu.sg/curriculum/awards-and-recognition/award-winners-of-class-2016/">Awarded in 2016</a>)</li>
-                                        <li>DSTA-DSO Undergraduate Scholarship (<a href="https://blog.scholarshipguide.com.sg/protecting-our-nation-with-rd/">Awarded in 2011</a>)</li>
-                                    </ul>
+                  <b>Awards</b> (that I am grateful for receiving)
+                  <ul>
+                      <li><a href="https://www.nus.edu.sg/careers/wp-content/uploads/2025/04/NUS-development-grant.pdf">NUS Development Grant</a> (Awarded in 2025)</li>
+                      <li>NUS School of Computing Research Achievement Award (<a href="https://www.comp.nus.edu.sg/programmes/pg/awards/deans-research/">Awarded in 2023</a>)</li>
+                      <li><a href="https://aisingapore.org/research/phd-fellowship-programme/">AISG PhD Fellowship</a> (Awarded in 2021)</li>
+                      <li>President's Honour Roll, USP Scholar (<a href="https://www.usp.nus.edu.sg/curriculum/awards-and-recognition/award-winners-of-class-2016/">Awarded in 2016</a>)</li>
+                      <li>DSTA-DSO Undergraduate Scholarship (<a href="https://blog.scholarshipguide.com.sg/protecting-our-nation-with-rd/">Awarded in 2011</a>)</li>
+                  </ul>
 
-                                    <b>Visits / Experiences / Opportunities</b> (which I was fortunate to have)
-                                    <ul>
-                                        <li><a href="https://is.mpg.de/employees/dchoo">Visiting PhD student</a> of <a href="https://is.mpg.de/~bs">Bernhard Schölkopf</a> at <a href="https://ei.is.mpg.de/">Empirical Inference</a> group of <a href="https://is.mpg.de/">Max Planck Institute for Intelligent Systems</a><br> Summer 2023 @ Tübingen, Germany</li>
-                                        <li><a href="https://simons.berkeley.edu/people/davin-choo">Visiting graduate student</a> to the <a href="https://simons.berkeley.edu/homepage">Simons Institute for the Theory of Computing</a> under the <a href="https://simons.berkeley.edu/programs/Causality2022">Causality programme</a><br> Spring 2022 @ Berkeley, USA</li>
-                                    </ul>
+                  <b>Visits / Experiences / Opportunities</b> (which I was fortunate to have)
+                  <ul>
+                      <li><a href="https://is.mpg.de/employees/dchoo">Visiting PhD student</a> of <a href="https://is.mpg.de/~bs">Bernhard Schölkopf</a> at <a href="https://ei.is.mpg.de/">Empirical Inference</a> group of <a href="https://is.mpg.de/">Max Planck Institute for Intelligent Systems</a><br> Summer 2023 @ Tübingen, Germany</li>
+                      <li><a href="https://simons.berkeley.edu/people/davin-choo">Visiting graduate student</a> to the <a href="https://simons.berkeley.edu/homepage">Simons Institute for the Theory of Computing</a> under the <a href="https://simons.berkeley.edu/programs/Causality2022">Causality programme</a><br> Spring 2022 @ Berkeley, USA</li>
+                  </ul>
 
 									<header class="major">
 									Here is my <a href="files/Resume_Davin_Choo.pdf">resume</a> (Last updated: September 2025).

@@ -1,0 +1,523 @@
+[
+  {
+    "title": "Optimizing Health Coverage in Ethiopia: A Learning-augmented Approach and Persistent Proportionality Under an Online Budget",
+    "authors": "<b class='author-highlight'>Davin Choo</b>, Yohai Trabelsi, Fentabil Getnet, Samson Warkaye Lamma, Wondesen Nigatu, Kasahun Sime, Lisa Matay, Milind Tambe, Stéphane Verguet",
+    "venue": "AAAI Conference on Artificial Intelligence (AAAI); Social Impact Track",
+    "year": "2026",
+    "tags": ["RT2", "RT3", "Public health"],
+    "links": [
+      {
+        "label": "Code",
+        "href": "https://github.com/yohayt/Optimizing-Health-Coverage-in-Ethiopia"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2509.00135"
+      }
+    ]
+  },
+  {
+    "title": "Adaptive Frontier Exploration on Graphs with Applications to Network-Based Disease Testing",
+    "authors": "<b class='author-highlight'>Davin Choo</b>, Yuqi Pan, Tonghan Wang, Milind Tambe, Alastair van Heerden, Cheryl Johnson",
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS)",
+    "year": "2025",
+    "tags": ["RT3", "Public health"],
+    "links": [
+      {
+        "label": "Conference link",
+        "href": "https://neurips.cc/virtual/2025/loc/san-diego/poster/116207"
+      },
+      {
+        "label": "Code",
+        "href": "https://github.com/cxjdavin/adaptive-frontier-exploration-on-graphs"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2505.21671"
+      }
+    ]
+  },
+  {
+    "title": "Learning-Augmented Online Bipartite Fractional Matching",
+    "authors": "<b class='author-highlight'>Davin Choo</b>, Billy Jin, Yongho Shin",
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS)",
+    "year": "2025",
+    "tags": ["RT2", "Online", "Matching"],
+    "links": [
+      {
+        "label": "Conference link",
+        "href": "https://neurips.cc/virtual/2025/loc/san-diego/poster/117218"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2505.19252"
+      }
+    ]
+  },
+  {
+    "title": "A partition cover approach to tokenization",
+    "authors": "Jia Peng Lim, Shawn Tan, <b class='author-highlight'>Davin Choo</b>, Hady W. Lauw",
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS)",
+    "year": "2025",
+    "tags": ["RT1", "Tokenization"],
+    "links": [
+      {
+        "label": "Conference link",
+        "href": "https://neurips.cc/virtual/2025/loc/san-diego/poster/115918"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2501.06246"
+      }
+    ]
+  },
+  {
+    "title": "Product distribution learning with imperfect advice",
+    "authors": "Arnab Bhattacharyya, <b class='author-highlight'>Davin Choo</b>, Philips George John, Themis Gouleakis",
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS); Spotlight",
+    "year": "2025",
+    "tags": ["RT2", "Distribution learning"],
+    "links": [
+      {
+        "label": "Conference link",
+        "href": "https://neurips.cc/virtual/2025/loc/san-diego/poster/116544"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2511.10366"
+      }
+    ]
+  },
+  {
+    "title": "Learning multivariate Gaussians with imperfect advice",
+    "authors": "Arnab Bhattacharyya, <b class='author-highlight'>Davin Choo</b>, Philips George John, Themis Gouleakis",
+    "venue": "International Conference on Machine Learning (ICML)",
+    "year": "2025",
+    "tags": ["RT2", "Distribution learning"],
+    "links": [
+      {
+        "label": "Conference link",
+        "href": "https://icml.cc/virtual/2025/poster/46687"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2411.12700"
+      }
+    ]
+  },
+  {
+    "title": "Probably approximately correct high-dimensional causal effect estimation given a valid adjustment set",
+    "authors": "<b class='author-highlight'>Davin Choo</b>, Chandler Squires, Arnab Bhattacharyya, David Sontag",
+    "venue": "Conference on Causal Learning and Reasoning (CLeaR)",
+    "year": "2025",
+    "tags": ["RT1"],
+    "links": [
+      {
+        "label": "Conference link",
+        "href": "https://www.cclear.cc/2025/FullAgenda"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2411.08141"
+      }
+    ]
+  },
+  {
+    "title": "Learnability of Parameter-Bounded Bayes Nets",
+    "authors": "Arnab Bhattacharyya, <b class='author-highlight'>Davin Choo</b>, Sutanu Gayen, Dimitrios Myrisiotis",
+    "venue": "AAAI Conference on Artificial Intelligence (AAAI)",
+    "year": "2025",
+    "tags": ["RT1"],
+    "links": [
+      {
+        "label": "AAAI",
+        "href": "https://ojs.aaai.org/index.php/AAAI/article/view/33708"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2407.00927"
+      }
+    ]
+  },
+  {
+    "title": "Online bipartite matching with imperfect advice",
+    "authors": "<b class='author-highlight'>Davin Choo</b>, Themistoklis Gouleakis, Chun Kai Ling, Arnab Bhattacharyya",
+    "venue": "International Conference on Machine Learning (ICML)",
+    "year": "2024",
+    "tags": ["RT2"],
+    "links": [
+      {
+        "label": "Conference link",
+        "href": "https://icml.cc/virtual/2024/poster/34946"
+      },
+      {
+        "label": "ICML",
+        "href": "https://proceedings.mlr.press/v235/choo24a.html"
+      },
+      {
+        "label": "Code",
+        "href": "https://github.com/cxjdavin/online-bipartite-matching-with-imperfect-advice"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2405.09784"
+      }
+    ]
+  },
+  {
+    "title": "Envy-free house allocation with minimum subsidy",
+    "authors": "<b class='author-highlight'>Davin Choo</b>, Yan Hao Ling, Warut Suksompong, Nicholas Teh, Jian Zhang",
+    "venue": "Operations Research Letters (ORL)",
+    "year": "2024",
+    "tags": ["RT1"],
+    "links": [
+      {
+        "label": "ORL",
+        "href": "https://www.sciencedirect.com/science/article/pii/S0167637724000397"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2403.01162"
+      }
+    ]
+  },
+  {
+    "title": "Causal discovery under off-target interventions",
+    "authors": "<b class='author-highlight'>Davin Choo</b>, Kirankumar Shiragur, Caroline Uhler",
+    "venue": "International Conference on Artificial Intelligence and Statistics (AISTATS)",
+    "year": "2024",
+    "tags": ["RT1"],
+    "links": [
+      {
+        "label": "AISTATS",
+        "href": "https://proceedings.mlr.press/v238/choo24a.html"
+      },
+      {
+        "label": "Code",
+        "href": "https://github.com/cxjdavin/causal-discovery-under-off-target-interventions"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2402.08229"
+      }
+    ]
+  },
+  {
+    "title": "Learning bounded degree polytrees with samples",
+    "authors": "<b class='author-highlight'>Davin Choo</b>, Joy Qiping Yang, Arnab Bhattacharyya, Clément L. Canonne",
+    "venue": "International Conference on Algorithmic Learning Theory (ALT)",
+    "year": "2024",
+    "tags": ["RT1"],
+    "links": [
+      {
+        "label": "ALT",
+        "href": "http://algorithmiclearningtheory.org/alt2024/accepted-papers/"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2310.06333"
+      }
+    ]
+  },
+  {
+    "title": "The Sharp Power Law of Local Search on Expanders",
+    "authors": "Simina Brânzei, <b class='author-highlight'>Davin Choo</b>, Nicholas Recker",
+    "venue": "Symposium on Discrete Algorithms (SODA)",
+    "year": "2024",
+    "tags": ["RT1"],
+    "links": [
+      {
+        "label": "SODA",
+        "href": "https://epubs.siam.org/doi/abs/10.1137/1.9781611977912.71"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2305.08269"
+      }
+    ]
+  },
+  {
+    "title": "Learning and Testing Latent-Tree Ising Models Efficiently",
+    "authors": "Yuval Dagan, Constantinos Daskalakis, Anthimos-Vardis Kandiros, <b class='author-highlight'>Davin Choo</b>",
+    "venue": "Conference on Learning Theory (COLT)",
+    "year": "2023",
+    "tags": ["RT1"],
+    "links": [
+      {
+        "label": "Conference link",
+        "href": "https://learningtheory.org/colt2023/abstracts.html#Distribution%20learning%20&%20testing%201"
+      },
+      {
+        "label": "COLT",
+        "href": "https://proceedings.mlr.press/v195/kandiros23a.html"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2211.13291"
+      }
+    ]
+  },
+  {
+    "title": "Adaptivity Complexity for Causal Graph Discovery",
+    "authors": "<b class='author-highlight'>Davin Choo</b>, Kirankumar Shiragur",
+    "venue": "Conference on Uncertainty in Artificial Intelligence (UAI)",
+    "year": "2023",
+    "tags": ["RT1"],
+    "links": [
+      {
+        "label": "UAI",
+        "href": "https://proceedings.mlr.press/v216/choo23a.html"
+      },
+      {
+        "label": "Code",
+        "href": "https://github.com/cxjdavin/adaptivity-complexity-for-causal-graph-discovery"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2306.05781"
+      },
+      {
+        "label": "Video",
+        "href": "https://www.youtube.com/watch?v=hvSdNRR8sXI"
+      }
+    ]
+  },
+  {
+    "title": "New metrics and search algorithms for weighted causal DAGs",
+    "authors": "<b class='author-highlight'>Davin Choo</b>, Kirankumar Shiragur",
+    "venue": "International Conference on Machine Learning (ICML)",
+    "year": "2023",
+    "tags": ["RT1"],
+    "links": [
+      {
+        "label": "Conference link",
+        "href": "https://icml.cc/virtual/2023/poster/23558"
+      },
+      {
+        "label": "ICML",
+        "href": "https://proceedings.mlr.press/v202/choo23b"
+      },
+      {
+        "label": "Code",
+        "href": "https://github.com/cxjdavin/new-metrics-and-search-algorithms-for-weighted-causal-DAGs"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2305.04445"
+      }
+    ]
+  },
+  {
+    "title": "Active causal structure learning with advice",
+    "authors": "<b class='author-highlight'>Davin Choo</b>, Themistoklis Gouleakis, Arnab Bhattacharyya",
+    "venue": "International Conference on Machine Learning (ICML)",
+    "year": "2023",
+    "tags": ["RT1"],
+    "links": [
+      {
+        "label": "Conference link",
+        "href": "https://icml.cc/virtual/2023/poster/23710"
+      },
+      {
+        "label": "ICML",
+        "href": "https://proceedings.mlr.press/v202/choo23a"
+      },
+      {
+        "label": "Code",
+        "href": "https://github.com/cxjdavin/active-causal-structure-learning-with-advice"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2305.19588"
+      }
+    ]
+  },
+  {
+    "title": "Subset verification and search algorithms for causal DAGs",
+    "authors": "<b class='author-highlight'>Davin Choo</b>, Kirankumar Shiragur",
+    "venue": "International Conference on Artificial Intelligence and Statistics (AISTATS)",
+    "year": "2023",
+    "tags": ["RT1"],
+    "links": [
+      {
+        "label": "AISTATS",
+        "href": "https://proceedings.mlr.press/v206/choo23a.html"
+      },
+      {
+        "label": "Code",
+        "href": "https://github.com/cxjdavin/subset-verification-and-search-algorithms-for-causal-DAGs"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2301.03180"
+      },
+      {
+        "label": "Video",
+        "href": "https://www.youtube.com/watch?v=SvSmkL-xr-0"
+      }
+    ]
+  },
+  {
+    "title": "Verification and search algorithms for causal DAGs",
+    "authors": "<b class='author-highlight'>Davin Choo</b>, Kirankumar Shiragur, Arnab Bhattacharyya",
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS)",
+    "year": "2022",
+    "tags": ["RT1"],
+    "links": [
+      {
+        "label": "Conference link",
+        "href": "https://nips.cc/virtual/2022/poster/54621"
+      },
+      {
+        "label": "NeurIPS",
+        "href": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/5340b0c0b76dc0115f5cc91c20c1251d-Abstract-Conference.html"
+      },
+      {
+        "label": "Code",
+        "href": "https://github.com/cxjdavin/verification-and-search-algorithms-for-causal-DAGs"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2206.15374"
+      },
+      {
+        "label": "Slides",
+        "href": "files/talks/neurips2022/verification-and-search-algorithms-for-causal-dags.pdf"
+      },
+      {
+        "label": "Longer slides",
+        "href": "files/talks/neurips2022/verification-and-search-algorithms-for-causal-dags-longer.pdf"
+      }
+    ]
+  },
+  {
+    "title": "Learning Sparse Fixed-Structure Gaussian Bayesian Networks",
+    "authors": "Arnab Bhattacharyya, <b class='author-highlight'>Davin Choo</b>, Rishikesh Gajjala, Sutanu Gayen, Yuhao Wang",
+    "venue": "International Conference on Artificial Intelligence and Statistics (AISTATS)",
+    "year": "2022",
+    "tags": ["RT1"],
+    "links": [
+      {
+        "label": "AISTATS",
+        "href": "https://proceedings.mlr.press/v151/bhattacharyya22b.html"
+      },
+      {
+        "label": "Code",
+        "href": "https://github.com/YohannaWANG/CauchyEst"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2107.10450"
+      }
+    ]
+  },
+  {
+    "title": "The Complexity of Sparse Tensor PCA",
+    "authors": "<b class='author-highlight'>Davin Choo</b>, Tommaso d'Orsi",
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS)",
+    "year": "2021",
+    "tags": ["RT1"],
+    "links": [
+      {
+        "label": "Conference link",
+        "href": "https://nips.cc/virtual/2021/poster/28223"
+      },
+      {
+        "label": "NeurIPS",
+        "href": "https://proceedings.neurips.cc/paper/2021/hash/42a6845a557bef704ad8ac9cb4461d43-Abstract.html"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2106.06308"
+      },
+      {
+        "label": "Video",
+        "href": "https://slideslive.com/38967471/the-complexity-of-sparse-tensor-pca"
+      },
+      {
+        "label": "Slides",
+        "href": "files/talks/neurips2021/the-complexity-of-sparse-tensor-pca.pdf"
+      }
+    ]
+  },
+  {
+    "title": "Massively Parallel Correlation Clustering in Bounded Arboricity Graphs",
+    "authors": "Mélanie Cambus, <b class='author-highlight'>Davin Choo</b>, Havu Miikonen, Jara Uitto",
+    "venue": "International Symposium on Distributed Computing (DISC)",
+    "year": "2021",
+    "tags": ["RT1", "Clustering", "Distributed"],
+    "links": [
+      {
+        "label": "DISC",
+        "href": "https://drops.dagstuhl.de/opus/volltexte/2021/14817/pdf/LIPIcs-DISC-2021-15.pdf"
+      },
+      {
+        "label": "Video",
+        "href": "https://www.youtube.com/watch?v=i005NVPBPWs&ab_channel=PODC%E2%80%93DISC"
+      }
+    ]
+  },
+  {
+    "title": "k-means++: few more steps yield constant approximation",
+    "authors": "<b class='author-highlight'>Davin Choo</b>, Christoph Grunau, Julian Portmann, Václav Rozhoň",
+    "venue": "International Conference on Machine Learning (ICML)",
+    "year": "2020",
+    "tags": ["RT1", "Clustering"],
+    "links": [
+      {
+        "label": "Conference link",
+        "href": "https://icml.cc/virtual/2020/poster/6421"
+      },
+      {
+        "label": "ICML",
+        "href": "http://proceedings.mlr.press/v119/choo20a.html"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2002.07784"
+      },
+      {
+        "label": "Video",
+        "href": "https://slideslive.com/38928151/kmeans-few-more-steps-yield-constant-approximation"
+      },
+      {
+        "label": "Slides",
+        "href": "files/talks/icml2020/k-means++-few-more-steps-yield-constant-approximation.pdf"
+      }
+    ]
+  },
+  {
+    "title": "BOSPHORUS: Bridging ANF and CNF Solvers",
+    "authors": "<b class='author-highlight'>Davin Choo</b>, Mate Soos, Kian Ming A. Chai, Kuldeep S. Meel",
+    "venue": "Proceedings of Design, Automation, and Test in Europe (DATE)",
+    "year": "2019",
+    "tags": ["RT1", "SAT solver"],
+    "links": [
+      {
+        "label": "DATE",
+        "href": "https://ieeexplore.ieee.org/document/8715061"
+      },
+      {
+        "label": "Code",
+        "href": "https://github.com/meelgroup/bosphorus"
+      },
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/1812.04580"
+      }
+    ]
+  },
+  {
+    "title": "Chemical Structure Elucidation from Mass Spectrometry by Matching Substructures",
+    "authors": "Jing Lim, Joshua Wong, Minn Xuan Wong, Lee Han Eric Tan, Hai Leong Chieu, <b class='author-highlight'>Davin Choo</b>, Neng Kai Nigel Neo",
+    "venue": "Machine Learning for Molecules and Materials (NeurIPS Workshop)",
+    "year": "2018",
+    "tags": ["RT3"],
+    "links": [
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/1811.07886"
+      }
+    ]
+  }
+]
