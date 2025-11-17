@@ -76,7 +76,7 @@
     "authors": "Arnab Bhattacharyya, <b class='author-highlight'>Davin Choo</b>, Philips George John, Themis Gouleakis",
     "venue": "Conference on Neural Information Processing Systems (NeurIPS); Spotlight",
     "year": "2025",
-    "tags": ["RT2", "Distribution learning"],
+    "tags": ["RT1", "RT2", "Distribution learning"],
     "links": [
       {
         "label": "Conference link",
@@ -93,7 +93,7 @@
     "authors": "Arnab Bhattacharyya, <b class='author-highlight'>Davin Choo</b>, Philips George John, Themis Gouleakis",
     "venue": "International Conference on Machine Learning (ICML)",
     "year": "2025",
-    "tags": ["RT2", "Distribution learning"],
+    "tags": ["RT1", "RT2", "Distribution learning"],
     "links": [
       {
         "label": "Conference link",
