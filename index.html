@@ -25,8 +25,7 @@
       }
 
       #publications td.authors b {
-        color: #4f9cff;
-        font-weight: 700;
+        color: rgb(0, 0, 0);
       }
 
       /* Filter chips — match tag pills */
@@ -53,6 +52,40 @@
 
       /* Tag pills inside the table */
       .pub-tag-pill{ display:inline-block; padding:.2rem .5rem; border-radius:999px; border:1px solid rgba(0,0,0,.15); font-size:.85em; margin:.1rem .25rem .1rem 0; background:var(--chip-bg); }
+
+      /* Text-only colors for tag pills and filter chips */
+      .pub-tag-pill[data-tag="RT1"],
+      #pub-filter-chips label[data-tag="RT1"] {
+        color: rgb(256, 192, 0);
+        font-weight: 1000;
+      }
+
+      .pub-tag-pill[data-tag="RT2"],
+      #pub-filter-chips label[data-tag="RT2"] {
+        color: rgb(80, 150, 220);
+        font-weight: 1000;
+      }
+
+      .pub-tag-pill[data-tag="RT3"],
+      #pub-filter-chips label[data-tag="RT3"] {
+        color: rgb(256, 0, 0);
+        font-weight: 1000;
+      }
+
+      /* Keep pill backgrounds neutral */
+      .pub-tag-pill,
+      #pub-filter-chips label {
+        background: rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.15);
+      }
+
+      /* Optional: slightly darken border on hover or when active */
+      #pub-filter-chips label:hover {
+        border-color: #4f9cff;
+      }
+      #pub-filter-chips label:has(input[type="checkbox"]:checked) {
+        font-weight: 600; /* emphasize selection */
+      }
     </style>
 	</head>
 	<body class="is-preload">
@@ -64,7 +97,7 @@
 						<ul>
 							<li><a href="#intro" class="active">Home</a></li>
 							<li><a href="#publications">Publications</a></li>
-							<li><a href="#otherwritings">Manuscripts and other writings</a></li>
+							<li><a href="#otherwritings">Other writings</a></li>
 							<li><a href="#talks">Talks</a></li>
 							<li><a href="#teaching">Teaching</a></li>
 							<li><a href="#service">Service</a></li>
@@ -82,37 +115,41 @@
 							<div class="spotlight">
 								<div class="content">
 									<header class="major">
-										<h2>Davin Choo</h2>
+										<h2>
+                    Davin Choo
+                    <br>
+                    <small style="font-size: 0.5em;">Postdoctoral Fellow @ Harvard SEAS</small>
+                    </h2>
 									</header>
                   <p>
-                  My work focuses on designing AI and algorithmic solutions for use-inspired and impact-driven research.
-                  I am particularly interested in problems motivated from real-world scenarios, where careful modeling and principled use of structure can lead to both practical improvements and theoretical insights.
-                  I also like learning new things and skills.
-									If you think you are working on a problem that I might find interesting, do not hesitate to reach out to me to chat about it!
-									</p>
-                  <p>
-                  <b>Short bio (for talks, etc)</b>:
-                  Davin is a postdoctoral fellow at <a href="https://teamcore.seas.harvard.edu/">Teamcore</a>, Harvard University.
-                  He earned his PhD in Computer Science from the National University of Singapore (NUS) as an <a href="https://aisingapore.org/research/phd-fellowship-programme/">AISG PhD fellow</a>, a Master's degree in Computer Science from ETH Zürich, and two undergraduate degrees in Computer Science and Applied Mathematics from NUS.
-                  Between his undergraduate and Masters, he also worked for a while as an applied research scientist at <a href="https://www.dso.org.sg/">DSO National Laboratories</a> on projects that lie in the intersection of AI and security.
-                  During his PhD at NUS, he focused on the foundations of AI and machine learning, working on statistical models, causal inference, and the design of resource-efficient algorithms.
-                  His current postdoctoral research at Harvard explores how principled algorithmic and AI techniques can be applied to real-world problems with the goal of achieving meaningful social impact.
+                  My research centers on developing <b>principled AI and algorithmic solutions for use-inspired, impact-driven problems</b>, organized around three synergistic thrusts that advance both foundations and real-world impact.
                   </p>
-									<dl class="alt">
-									<dt>Email</dt>
-									    <dd>davinchoo [at] seas.harvard.edu</dd>
-									<dt>Links</dt>
-                      <dd>
-									    <a href="https://www.linkedin.com/in/davinchoo/"><i class="fa fa-linkedin-square"></i></a>
-									    <a href="https://scholar.google.com.sg/citations?user=cPtzhPsAAAAJ&hl=en"><i class="ai ai-google-scholar-square"></i></a>
-                      <a href="https://orcid.org/0000-0002-4545-7341"><i class="ai ai-orcid"></i></a>
-                      <a href="https://github.com/cxjdavin"><i class="fa fa-github-square"></i></a>
-                      </dd>
-                      To learn more about me, see <a href="#aboutme">here</a>.
-									</dl>
+                  <p>
+                    <img src="images/research-flow.png" alt="Overview of research flow" width="100%" height="auto"/>
+                  </p>
+                  <ul align="left">
+                    <li><b style="color: rgb(256, 192, 0);">RT1 (Foundational AI/ML)</b>: Here, I mainly tackle problems in statistical machine learning and causal inference. I also have some works on clustering, SAT solving, and improving computational subtasks in modern ML pipelines.</li>
+                    <li><b style="color: rgb(80, 150, 220);">RT2 (Algorithms with imperfect advice</b>, a.k.a. <a href="https://algorithms-with-predictions.github.io/">learning-augmented algorithms</a><b style="color: rgb(80, 150, 220);">)</b>: Here, I design methods that leverage imperfect, instance-specific information to overcome generic worst-case hardness barriers. As part of my <a href="files/davin-phd-thesis.pdf">PhD</a>, I developed the Test-and-Act framework for designing such algorithms.
+                    <li><b style="color: rgb(256, 0, 0);">RT3 (AI+X)</b>: Here, I work with domain experts beyond Computer Science to principally model and improve real-world processes.</li>
+                  </ul>
 								</div>
 								<span class="image"><img src="images/head.jpg" alt="" /></span>
 							</div>
+              <p>
+              If you think you are working on a problem that I might find interesting, do not hesitate to reach out to me to chat about it!
+              </p>
+              <dl class="alt">
+              <dt>Email</dt>
+                  <dd>davinchoo [at] seas.harvard.edu</dd>
+              <dt>Links</dt>
+                  <dd>
+                  <a href="https://www.linkedin.com/in/davinchoo/"><i class="fa fa-linkedin-square"></i></a>
+                  <a href="https://scholar.google.com.sg/citations?user=cPtzhPsAAAAJ&hl=en"><i class="ai ai-google-scholar-square"></i></a>
+                  <a href="https://orcid.org/0000-0002-4545-7341"><i class="ai ai-orcid"></i></a>
+                  <a href="https://github.com/cxjdavin"><i class="fa fa-github-square"></i></a>
+                  </dd>
+                  To learn more about me, see <a href="#aboutme">here</a>.
+              </dl>
 						</section>
 
 						<!-- Publications -->
@@ -121,18 +158,7 @@
 								<h2>Publications</h2>
 							</header>
 
-              <!-- Illustration + intro -->
-              <p>
-              My research vision is organized around the following three thrusts, which synergize to bring about real-world impact.
-              Broadly speaking,
-              <strong style="color: rgb(256, 0, 0);">RT1</strong>: Statistical and causal machine learning problems.
-              <strong style="color: rgb(80, 150, 220);">RT2</strong>: Learning-augmented algorithms.
-              <strong style="color:  rgb(256, 192, 0);">RT3</strong>: AI+X.
-              </p>
-              <p>
-                <img src="images/research-flow.png" alt="Overview of research flow" width="60%" height="auto"/>
-              </p>
-              <h6 text-align="left">
+              <h6>
               My peer-reviewed publications listed below are tagged and filterable.
               Note that author names are sometimes in alphabetical ordering of last names as this is the convention for theory work/venues.
               </h6>
@@ -150,21 +176,21 @@
               <div class="table-wrapper">
                 <table class="alt" id="pub-table">
                   <colgroup>
-                    <col span="1" style="width:28%;">
-                    <col span="1" style="width:24%;">
-                    <col span="1" style="width:18%;">
-                    <col span="1" style="width:6%;">
-                    <col span="1" style="width:12%;"> <!-- Tags -->
-                    <col span="1" style="width:12%;"> <!-- Links -->
+                    <col span="1" style="width:29%;">
+                    <col span="1" style="width:29%;">
+                    <col span="1" style="width:17%;">
+                    <col span="1" style="width:3%;">
+                    <col span="1" style="width:10%;">
+                    <col span="1" style="width:12%;">
                   </colgroup>
                   <thead>
                     <tr>
-                      <th>Title</th>
-                      <th>Authors</th>
-                      <th>Venue</th>
-                      <th>Year</th>
-                      <th>Tags</th>
-                      <th>Links</th>
+                      <th style="text-align:center;">Title</th>
+                      <th style="text-align:center;">Authors</th>
+                      <th style="text-align:center;">Venue</th>
+                      <th style="text-align:center;">Year</th>
+                      <th style="text-align:center;">Tags</th>
+                      <th style="text-align:center;">Links</th>
                     </tr>
                   </thead>
                   <tbody><!-- filled by JS below --></tbody>
@@ -216,6 +242,7 @@
                   for (const label of allLabels) {
                     const id = `pub-lab-${label.replace(/[^a-z0-9]+/gi,'-')}`;
                     const lab = document.createElement('label');
+                    lab.setAttribute('data-tag', label);
                     lab.innerHTML = `<input type="checkbox" value="${label}" id="${id}"> ${label}`;
                     chipsEl.appendChild(lab);
                   }
@@ -224,7 +251,9 @@
                   for (const r of rows) {
                     const holder = r.querySelector('.pub-tags');
                     const tags = (r.dataset.tags || '').split(',').map(s => s.trim()).filter(Boolean);
-                    holder.innerHTML = tags.map(t => `<span class="pub-tag-pill">${t}</span>`).join('');
+                    holder.innerHTML = tags
+                      .map(t => `<span class="pub-tag-pill" data-tag="${t}">${t}</span>`)
+                      .join('');
                   }
 
                   // 4) Filtering + zebra+border maintenance
@@ -310,7 +339,7 @@
 						<!-- Other writings -->
 						<section id="otherwritings" class="main special">
 							<header class="major">
-								<h2>Manuscripts and other writings</h2>
+								<h2>Other writings</h2>
 							</header>
 							<div class="table-wrapper">
 								<table class="alt">
@@ -738,7 +767,7 @@
                     <li><b>Reviewer</b> for Innovations in Theoretical Computer Science (ITCS), 2026</li>
                     <li><b>Program Committee</b> for AAAI Conference on Artificial Intelligence (AAAI) Social Impact Track, 2026</li>
                     <li><b>Program Committee</b> for AAAI Conference on Artificial Intelligence (AAAI) Main Track, 2026</li>
-                    <li><b>Reviewer</b> for Conference on Neural Information Processing Systems (NeurIPS), 2025</li>
+                    <li><b>Reviewer</b> for Conference on Neural Information Processing Systems (NeurIPS), 2025; <b>Top reviewer</b></li>
                     <li><b>Reviewer</b> for Transactions on Machine Learning Research (TMLR), 2025</li>
                     <li><b>Reviewer</b> for International Conference on Machine Learning (ICML), 2025</li>
                     <li><b>Reviewer</b> for International Joint Conference on Artificial Intelligence (IJCAI), 2025</li>
@@ -887,9 +916,18 @@
                       <li><a href="https://simons.berkeley.edu/people/davin-choo">Visiting graduate student</a> to the <a href="https://simons.berkeley.edu/homepage">Simons Institute for the Theory of Computing</a> under the <a href="https://simons.berkeley.edu/programs/Causality2022">Causality programme</a><br> Spring 2022 @ Berkeley, USA</li>
                   </ul>
 
-									<header class="major">
-									Here is my <a href="files/Resume_Davin_Choo.pdf">resume</a> (Last updated: September 2025).
-									</header>
+                  <p>
+                  <b>Short bio (for talks, etc)</b>:
+                  Davin is a postdoctoral fellow at <a href="https://teamcore.seas.harvard.edu/">Teamcore</a>, Harvard University.
+                  He earned his PhD in Computer Science from the National University of Singapore (NUS) as an <a href="https://aisingapore.org/research/phd-fellowship-programme/">AISG PhD fellow</a>, a Master's degree in Computer Science from ETH Zürich, and two undergraduate degrees in Computer Science and Applied Mathematics from NUS.
+                  Between his undergraduate and Masters, he also worked for a while as an applied research scientist at <a href="https://www.dso.org.sg/">DSO National Laboratories</a> on projects that lie in the intersection of AI and security.
+                  During his PhD at NUS, he focused on the foundations of AI and machine learning, working on statistical models, causal inference, and the design of resource-efficient algorithms.
+                  His current postdoctoral research at Harvard explores how principled algorithmic and AI techniques can be applied to real-world problems with the goal of achieving meaningful social impact.
+                  </p>
+
+                  <header class="major">
+                  Here is my <a href="files/Resume_Davin_Choo.pdf">resume</a> (Last updated: November 2025).
+                  </header>
 								</div>
 							</section>
 

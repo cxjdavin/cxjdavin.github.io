@@ -2,7 +2,7 @@
   {
     "title": "Optimizing Health Coverage in Ethiopia: A Learning-augmented Approach and Persistent Proportionality Under an Online Budget",
     "authors": "<b class='author-highlight'>Davin Choo</b>, Yohai Trabelsi, Fentabil Getnet, Samson Warkaye Lamma, Wondesen Nigatu, Kasahun Sime, Lisa Matay, Milind Tambe, Stéphane Verguet",
-    "venue": "AAAI Conference on Artificial Intelligence (AAAI); Social Impact Track",
+    "venue": "AAAI Conference on Artificial Intelligence (AAAI) Social Impact Track",
     "year": "2026",
     "tags": ["RT2", "RT3", "Public health"],
     "links": [
@@ -110,7 +110,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Chandler Squires, Arnab Bhattacharyya, David Sontag",
     "venue": "Conference on Causal Learning and Reasoning (CLeaR)",
     "year": "2025",
-    "tags": ["RT1"],
+    "tags": ["RT1", "Causal inference"],
     "links": [
       {
         "label": "Conference link",
@@ -127,7 +127,7 @@
     "authors": "Arnab Bhattacharyya, <b class='author-highlight'>Davin Choo</b>, Sutanu Gayen, Dimitrios Myrisiotis",
     "venue": "AAAI Conference on Artificial Intelligence (AAAI)",
     "year": "2025",
-    "tags": ["RT1"],
+    "tags": ["RT1", "Distribution learning"],
     "links": [
       {
         "label": "AAAI",
@@ -144,7 +144,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Themistoklis Gouleakis, Chun Kai Ling, Arnab Bhattacharyya",
     "venue": "International Conference on Machine Learning (ICML)",
     "year": "2024",
-    "tags": ["RT2"],
+    "tags": ["RT2", "Online", "Matching"],
     "links": [
       {
         "label": "Conference link",
@@ -169,7 +169,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Yan Hao Ling, Warut Suksompong, Nicholas Teh, Jian Zhang",
     "venue": "Operations Research Letters (ORL)",
     "year": "2024",
-    "tags": ["RT1"],
+    "tags": ["RT1", "Fair division"],
     "links": [
       {
         "label": "ORL",
@@ -186,7 +186,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Kirankumar Shiragur, Caroline Uhler",
     "venue": "International Conference on Artificial Intelligence and Statistics (AISTATS)",
     "year": "2024",
-    "tags": ["RT1"],
+    "tags": ["RT1", "Causal inference"],
     "links": [
       {
         "label": "AISTATS",
@@ -207,7 +207,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Joy Qiping Yang, Arnab Bhattacharyya, Clément L. Canonne",
     "venue": "International Conference on Algorithmic Learning Theory (ALT)",
     "year": "2024",
-    "tags": ["RT1"],
+    "tags": ["RT1", "Distribution learning"],
     "links": [
       {
         "label": "ALT",
@@ -224,7 +224,7 @@
     "authors": "Simina Brânzei, <b class='author-highlight'>Davin Choo</b>, Nicholas Recker",
     "venue": "Symposium on Discrete Algorithms (SODA)",
     "year": "2024",
-    "tags": ["RT1"],
+    "tags": ["RT1", "Query complexity"],
     "links": [
       {
         "label": "SODA",
@@ -241,7 +241,7 @@
     "authors": "Yuval Dagan, Constantinos Daskalakis, Anthimos-Vardis Kandiros, <b class='author-highlight'>Davin Choo</b>",
     "venue": "Conference on Learning Theory (COLT)",
     "year": "2023",
-    "tags": ["RT1"],
+    "tags": ["RT1", "Distribution learning"],
     "links": [
       {
         "label": "Conference link",
@@ -262,7 +262,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Kirankumar Shiragur",
     "venue": "Conference on Uncertainty in Artificial Intelligence (UAI)",
     "year": "2023",
-    "tags": ["RT1"],
+    "tags": ["RT1", "Causal inference"],
     "links": [
       {
         "label": "UAI",
@@ -287,7 +287,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Kirankumar Shiragur",
     "venue": "International Conference on Machine Learning (ICML)",
     "year": "2023",
-    "tags": ["RT1"],
+    "tags": ["RT1", "Causal inference"],
     "links": [
       {
         "label": "Conference link",
@@ -312,7 +312,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Themistoklis Gouleakis, Arnab Bhattacharyya",
     "venue": "International Conference on Machine Learning (ICML)",
     "year": "2023",
-    "tags": ["RT1"],
+    "tags": ["RT1", "RT2", "Causal inference"],
     "links": [
       {
         "label": "Conference link",
@@ -337,7 +337,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Kirankumar Shiragur",
     "venue": "International Conference on Artificial Intelligence and Statistics (AISTATS)",
     "year": "2023",
-    "tags": ["RT1"],
+    "tags": ["RT1", "Causal inference"],
     "links": [
       {
         "label": "AISTATS",
@@ -362,7 +362,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Kirankumar Shiragur, Arnab Bhattacharyya",
     "venue": "Conference on Neural Information Processing Systems (NeurIPS)",
     "year": "2022",
-    "tags": ["RT1"],
+    "tags": ["RT1", "Causal inference"],
     "links": [
       {
         "label": "Conference link",
@@ -395,7 +395,7 @@
     "authors": "Arnab Bhattacharyya, <b class='author-highlight'>Davin Choo</b>, Rishikesh Gajjala, Sutanu Gayen, Yuhao Wang",
     "venue": "International Conference on Artificial Intelligence and Statistics (AISTATS)",
     "year": "2022",
-    "tags": ["RT1"],
+    "tags": ["RT1", "Distribution learning"],
     "links": [
       {
         "label": "AISTATS",
@@ -416,7 +416,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Tommaso d'Orsi",
     "venue": "Conference on Neural Information Processing Systems (NeurIPS)",
     "year": "2021",
-    "tags": ["RT1"],
+    "tags": ["RT1", "Statistical-Computational Gap"],
     "links": [
       {
         "label": "Conference link",
@@ -512,7 +512,7 @@
     "authors": "Jing Lim, Joshua Wong, Minn Xuan Wong, Lee Han Eric Tan, Hai Leong Chieu, <b class='author-highlight'>Davin Choo</b>, Neng Kai Nigel Neo",
     "venue": "Machine Learning for Molecules and Materials (NeurIPS Workshop)",
     "year": "2018",
-    "tags": ["RT3"],
+    "tags": ["RT3", "Chemistry"],
     "links": [
       {
         "label": "arXiv",
