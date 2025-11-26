@@ -56,19 +56,19 @@
       /* Text-only colors for tag pills and filter chips */
       .pub-tag-pill[data-tag="RT1"],
       #pub-filter-chips label[data-tag="RT1"] {
-        color: rgb(256, 192, 0);
+        background: rgba(256, 192, 0, 0.5);
         font-weight: 1000;
       }
 
       .pub-tag-pill[data-tag="RT2"],
       #pub-filter-chips label[data-tag="RT2"] {
-        color: rgb(80, 150, 220);
+        background: rgba(80, 150, 220, 0.5);
         font-weight: 1000;
       }
 
       .pub-tag-pill[data-tag="RT3"],
       #pub-filter-chips label[data-tag="RT3"] {
-        color: rgb(256, 0, 0);
+        background: rgba(256, 0, 0, 0.5);
         font-weight: 1000;
       }
 
@@ -85,6 +85,15 @@
       }
       #pub-filter-chips label:has(input[type="checkbox"]:checked) {
         font-weight: 600; /* emphasize selection */
+      }
+
+      .pub-title {
+        margin-bottom: 0.2rem;
+        font-weight: 1000;
+      }
+
+      .pub-tags-line {
+        margin-top: 0.1rem;
       }
     </style>
 	</head>
@@ -103,7 +112,7 @@
 							<li><a href="#service">Service</a></li>
 							<li><a href="#forfun">For fun</a></li>
 							<li><a href="#aboutme">About me</a></li>
-                            <li><a href="visitingsingapore.html">Visiting Singapore?</a></li>
+              <li><a href="visitingsingapore.html">Visiting Singapore?</a></li>
 						</ul>
 					</nav>
 
@@ -129,7 +138,7 @@
                   </p>
                   <ul align="left">
                     <li><b style="color: rgb(256, 192, 0);">RT1 (Foundational AI/ML)</b>: Here, I mainly tackle problems in statistical machine learning and causal inference. I also have some works on clustering, SAT solving, and improving computational subtasks in modern ML pipelines.</li>
-                    <li><b style="color: rgb(80, 150, 220);">RT2 (Algorithms with imperfect advice</b>, a.k.a. <a href="https://algorithms-with-predictions.github.io/">learning-augmented algorithms</a><b style="color: rgb(80, 150, 220);">)</b>: Here, I design methods that leverage imperfect, instance-specific information to overcome generic worst-case hardness barriers. As part of my <a href="files/davin-phd-thesis.pdf">PhD</a>, I developed the Test-and-Act framework for designing such algorithms.
+                    <li><b style="color: rgb(80, 150, 220);">RT2 (Algorithms with imperfect advice)</b>: Here, I design methods that leverage imperfect, instance-specific information to overcome generic worst-case hardness barriers. As part of my <a href="files/davin-phd-thesis.pdf">PhD</a>, I developed the Test-and-Act framework for designing such <a href="https://algorithms-with-predictions.github.io/">learning-augmented algorithms</a>.
                     <li><b style="color: rgb(256, 0, 0);">RT3 (AI+X)</b>: Here, I work with domain experts beyond Computer Science to principally model and improve real-world processes.</li>
                   </ul>
 								</div>
@@ -176,11 +185,10 @@
               <div class="table-wrapper">
                 <table class="alt" id="pub-table">
                   <colgroup>
-                    <col span="1" style="width:29%;">
-                    <col span="1" style="width:29%;">
-                    <col span="1" style="width:17%;">
-                    <col span="1" style="width:3%;">
-                    <col span="1" style="width:10%;">
+                    <col span="1" style="width:41%;">
+                    <col span="1" style="width:41%;">
+                    <col span="1" style="width:4%;">
+                    <col span="1" style="width:2%;">
                     <col span="1" style="width:12%;">
                   </colgroup>
                   <thead>
@@ -189,13 +197,30 @@
                       <th style="text-align:center;">Authors</th>
                       <th style="text-align:center;">Venue</th>
                       <th style="text-align:center;">Year</th>
-                      <th style="text-align:center;">Tags</th>
                       <th style="text-align:center;">Links</th>
                     </tr>
                   </thead>
                   <tbody><!-- filled by JS below --></tbody>
 								</table>
 							</div>
+
+              <div style="text-align:left; font-size:15px">
+              <u>Legend</u> (venues in alphabetical ordering):
+              <b>AAAI</b>: AAAI Conference on Artificial Intelligence;
+              <b>AISTATS</b>: International Conference on Artificial Intelligence and Statistics;
+              <b>ALT</b>: International Conference on Algorithmic Learning Theory;
+              <b>CLeaR</b>: Conference on Causal Learning and Reasoning;
+              <b>COLT</b>: Conference on Learning Theory;
+              <b>DATE</b>: Proceedings of Design, Automation, and Test in Europe;
+              <b>DISC</b>: International Symposium on Distributed Computing;
+              <b>ICML</b>: International Conference on Machine Learning;
+              <b>MLMM</b>: Machine Learning for Molecules and Materials;
+              <b>NeurIPS</b>: Conference on Neural Information Processing Systems;
+              <b>ORL</b>: Operations Research Letters;
+              <b>SODA</b>: Symposium on Discrete Algorithms;
+              <b>UAI</b>: Conference on Uncertainty in Artificial Intelligence
+              </div>
+
 						</section>
             <script>
             (() => {
@@ -247,9 +272,17 @@
                     chipsEl.appendChild(lab);
                   }
 
+                  // // 3) Auto-fill tag pills per row from data-tags
+                  // for (const r of rows) {
+                  //   const holder = r.querySelector('.pub-tags');
+                  //   const tags = (r.dataset.tags || '').split(',').map(s => s.trim()).filter(Boolean);
+                  //   holder.innerHTML = tags
+                  //     .map(t => `<span class="pub-tag-pill" data-tag="${t}">${t}</span>`)
+                  //     .join('');
+                  // }
                   // 3) Auto-fill tag pills per row from data-tags
                   for (const r of rows) {
-                    const holder = r.querySelector('.pub-tags');
+                    const holder = r.querySelector('.pub-tags-line');
                     const tags = (r.dataset.tags || '').split(',').map(s => s.trim()).filter(Boolean);
                     holder.innerHTML = tags
                       .map(t => `<span class="pub-tag-pill" data-tag="${t}">${t}</span>`)
@@ -305,23 +338,42 @@
                 });
 
               // --- helper to render a <tr> from JSON row ---
-              function renderRow(row){
-                const tags = (row.tags || []).map(t => String(t).trim()).filter(Boolean);
-                const dataTags = tags.join(', ');
-                const links = (row.links || [])
-                  .map(l => `<a href="${l.href}">${escapeHtml(l.label)}</a>`)
-                  .join(', ');
+              // function renderRow(row){
+              //   const tags = (row.tags || []).map(t => String(t).trim()).filter(Boolean);
+              //   const dataTags = tags.join(', ');
+              //   const links = (row.links || [])
+              //     .map(l => `<a href="${l.href}">${escapeHtml(l.label)}</a>`)
+              //     .join(', ');
 
-                return `
-                  <tr data-tags="${escapeHtmlAttr(dataTags)}">
-                    <td>${escapeHtml(row.title)}</td>
-                    <td class="authors">${row.authors}</td>
-                    <td>${escapeHtml(row.venue)}</td>
-                    <td>${escapeHtml(row.year)}</td>
-                    <td class="pub-tags"></td>
-                    <td>${links}</td>
-                  </tr>`;
-              }
+              //   return `
+              //     <tr data-tags="${escapeHtmlAttr(dataTags)}">
+              //       <td>${escapeHtml(row.title)}</td>
+              //       <td class="authors">${row.authors}</td>
+              //       <td>${escapeHtml(row.venue)}</td>
+              //       <td>${escapeHtml(row.year)}</td>
+              //       <td class="pub-tags"></td>
+              //       <td>${links}</td>
+              //     </tr>`;
+              // }
+function renderRow(row){
+  const tags = (row.tags || []).map(t => String(t).trim()).filter(Boolean);
+  const dataTags = tags.join(', ');
+  const links = (row.links || [])
+    .map(l => `<a href="${l.href}">${escapeHtml(l.label)}</a>`)
+    .join(', ');
+
+  return `
+    <tr data-tags="${escapeHtmlAttr(dataTags)}">
+      <td>
+        <div class="pub-title">${escapeHtml(row.title)}</div>
+        <div class="pub-tags-line"></div> <!-- tags will be injected here -->
+      </td>
+      <td class="authors">${row.authors}</td>
+      <td>${escapeHtml(row.venue)}</td>
+      <td>${escapeHtml(row.year)}</td>
+      <td>${links}</td>
+    </tr>`;
+}
 
               // --- tiny escapers ---
               function escapeHtml(s=''){
