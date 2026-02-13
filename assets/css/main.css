@@ -2652,37 +2652,50 @@ input, select, textarea {
 		margin-bottom: 3em;
 	}
 
-		header.major h2 {
-			font-size: 2em;
-		}
+	header.major h2 {
+		font-size: 2em;
+	}
 
-			header.major h2:after {
-				display: block;
-				content: '';
-				width: 3.25em;
-				height: 2px;
-				margin: 0.7em 0 1em 0;
-				border-radius: 2px;
-			}
+	header.major h2:after h6:after {
+		background-color: rgba(255, 255, 255, 0.35);
+	}
 
-				section.special header.major h2:after, article.special header.major h2:after {
-					margin-left: auto;
-					margin-right: auto;
-				}
+	header.major h2:after {
+		display: block;
+		content: '';
+		width: 3.25em;
+		height: 2px;
+		margin: 0.7em 0 1em 0;
+		border-radius: 2px;
+	}
 
-		header.major p {
-			font-size: 1.25em;
-			letter-spacing: -0.025em;
-		}
+	header.major h5:after {
+		display: block;
+		content: '';
+		width: 8.125em;
+		height: 2px;
+		margin: 0.7em 0 1em 0;
+		border-radius: 2px;
+	}
 
-		header.major.special {
-			text-align: center;
-		}
+	section.special header.major h2:after, article.special header.major h2:after {
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-			header.major.special h2:after {
-				margin-left: auto;
-				margin-right: auto;
-			}
+	header.major p {
+		font-size: 1.25em;
+		letter-spacing: -0.025em;
+	}
+
+	header.major.special {
+		text-align: center;
+	}
+
+	header.major.special h2:after {
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 	footer.major {
 		margin-top: 3em;
@@ -2713,10 +2726,6 @@ input, select, textarea {
 
 	}
 
-	header.major h2:after {
-		background-color: rgba(255, 255, 255, 0.35);
-	}
-
 /* Table */
 
 	.table-wrapper {
@@ -2744,7 +2753,8 @@ input, select, textarea {
 			font-size: 0.9em;
 			font-weight: 400;
 			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
+			text-align: center;
+			vertical-align: middle;
 		}
 
 		table thead {
@@ -3558,6 +3568,14 @@ input, select, textarea {
 		}
 
 		#main header.major h2:after {
+			background-color: #dddddd;
+			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+		}
+
+		#main header.major h5:after {
 			background-color: #dddddd;
 			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
