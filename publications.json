@@ -1,10 +1,75 @@
 [
   {
+    "title": "Adaptive Multi-Round Allocation with Stochastic Arrivals",
+    "authors": "Yuqi Pan, <b class='author-highlight'>Davin Choo</b>, Haichuan Wang, Milind Tambe, Alastair van Heerden, Cheryl Johnson",
+    "venue": "ICML",
+    "year": "2026",
+    "tags": ["RT3", "Decision making", "Public health"],
+    "links": [
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2605.12111"
+      }
+    ]
+  },
+  {
+    "title": "Learning Unanimously Acceptable Lotteries via Queries",
+    "authors": "<b class='author-highlight'>Davin Choo</b>, Paul W. Goldberg, Nicholas Teh",
+    "venue": "ICML",
+    "year": "2026",
+    "tags": ["RT1", "RT2", "Fair division", "Query complexity"],
+    "links": [
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2604.17505"
+      }
+    ]
+  },
+  {
+    "title": "Approximate Proportionality in Online Fair Division",
+    "authors": "<b class='author-highlight'>Davin Choo</b>, Winston Fu, Derek Khu, Tzeh Yuan Neoh, Tze-Yang Poon, Nicholas Teh",
+    "venue": "ICML",
+    "year": "2026",
+    "tags": ["RT1", "RT2", "Fair division", "Online"],
+    "links": [
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2508.03253"
+      }
+    ]
+  },
+  {
+    "title": "Policy-Embedded Graph Expansion: Networked HIV Testing with Diffusion-Driven Network Samples",
+    "authors": "Akseli Kangaslahti, <b class='author-highlight'>Davin Choo</b>, Lingkai Kong, Milind Tambe, Alastair Van Heerden, Cheryl Johnson",
+    "venue": "IJCAI; AI for Good Track",
+    "year": "2026",
+    "tags": ["RT3", "Decision making", "Public health"],
+    "links": [
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2601.16233"
+      }
+    ]
+  },
+  {
+    "title": "Incentive-Aware AI Safety via Strategic Resource Allocation: A Stackelberg Security Games Perspective",
+    "authors": "Cheol Woo Kim, <b class='author-highlight'>Davin Choo</b>, Tzeh Yuan Neoh, Milind Tambe",
+    "venue": "AAMAS; Blue Sky Ideas Track",
+    "year": "2026",
+    "tags": ["Other"],
+    "links": [
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2602.07259"
+      }
+    ]
+  },
+  {
     "title": "Optimizing Health Coverage in Ethiopia: A Learning-augmented Approach and Persistent Proportionality Under an Online Budget",
     "authors": "<b class='author-highlight'>Davin Choo</b>, Yohai Trabelsi, Fentabil Getnet, Samson Warkaye Lamma, Wondesen Nigatu, Kasahun Sime, Lisa Matay, Milind Tambe, Stéphane Verguet",
     "venue": "AAAI; Social Impact Track",
     "year": "2026",
-    "tags": ["RT2", "RT3", "Public health"],
+    "tags": ["RT2", "RT3", "Decision making", "Public health"],
     "links": [
       {
         "label": "Code",
@@ -21,7 +86,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Yuqi Pan, Tonghan Wang, Milind Tambe, Alastair van Heerden, Cheryl Johnson",
     "venue": "NeurIPS",
     "year": "2025",
-    "tags": ["RT3", "Public health"],
+    "tags": ["RT3", "Decision making", "Public health"],
     "links": [
       {
         "label": "Conference link",
@@ -42,7 +107,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Billy Jin, Yongho Shin",
     "venue": "NeurIPS",
     "year": "2025",
-    "tags": ["RT2", "Online matching"],
+    "tags": ["RT2", "Matching", "Online"],
     "links": [
       {
         "label": "Conference link",
@@ -59,7 +124,7 @@
     "authors": "Jia Peng Lim, Shawn Tan, <b class='author-highlight'>Davin Choo</b>, Hady W. Lauw",
     "venue": "NeurIPS",
     "year": "2025",
-    "tags": ["RT1", "Tokenization"],
+    "tags": ["RT1", "LLM"],
     "links": [
       {
         "label": "Conference link",
@@ -76,7 +141,7 @@
     "authors": "Arnab Bhattacharyya, <b class='author-highlight'>Davin Choo</b>, Philips George John, Themis Gouleakis",
     "venue": "NeurIPS; Spotlight",
     "year": "2025",
-    "tags": ["RT1", "RT2", "Distribution learning"],
+    "tags": ["RT1", "RT2", "Statistics"],
     "links": [
       {
         "label": "Conference link",
@@ -93,7 +158,7 @@
     "authors": "Arnab Bhattacharyya, <b class='author-highlight'>Davin Choo</b>, Philips George John, Themis Gouleakis",
     "venue": "ICML",
     "year": "2025",
-    "tags": ["RT1", "RT2", "Distribution learning"],
+    "tags": ["RT1", "RT2", "Statistics"],
     "links": [
       {
         "label": "Conference link",
@@ -110,7 +175,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Chandler Squires, Arnab Bhattacharyya, David Sontag",
     "venue": "CleaR",
     "year": "2025",
-    "tags": ["RT1", "Causal inference"],
+    "tags": ["RT1", "Causality"],
     "links": [
       {
         "label": "Conference link",
@@ -127,7 +192,7 @@
     "authors": "Arnab Bhattacharyya, <b class='author-highlight'>Davin Choo</b>, Sutanu Gayen, Dimitrios Myrisiotis",
     "venue": "AAAI",
     "year": "2025",
-    "tags": ["RT1", "Distribution learning"],
+    "tags": ["RT1", "Statistics"],
     "links": [
       {
         "label": "AAAI",
@@ -144,7 +209,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Themistoklis Gouleakis, Chun Kai Ling, Arnab Bhattacharyya",
     "venue": "ICML",
     "year": "2024",
-    "tags": ["RT2", "Online matching"],
+    "tags": ["RT2", "Matching", "Online"],
     "links": [
       {
         "label": "Conference link",
@@ -186,7 +251,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Kirankumar Shiragur, Caroline Uhler",
     "venue": "AISTATS",
     "year": "2024",
-    "tags": ["RT1", "Causal inference"],
+    "tags": ["RT1", "Causality"],
     "links": [
       {
         "label": "AISTATS",
@@ -207,7 +272,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Joy Qiping Yang, Arnab Bhattacharyya, Clément L. Canonne",
     "venue": "ALT",
     "year": "2024",
-    "tags": ["RT1", "Distribution learning"],
+    "tags": ["RT1", "Statistics"],
     "links": [
       {
         "label": "ALT",
@@ -241,7 +306,7 @@
     "authors": "Yuval Dagan, Constantinos Daskalakis, Anthimos-Vardis Kandiros, <b class='author-highlight'>Davin Choo</b>",
     "venue": "COLT",
     "year": "2023",
-    "tags": ["RT1", "Distribution learning"],
+    "tags": ["RT1", "Statistics"],
     "links": [
       {
         "label": "Conference link",
@@ -262,7 +327,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Kirankumar Shiragur",
     "venue": "UAI",
     "year": "2023",
-    "tags": ["RT1", "Causal inference"],
+    "tags": ["RT1", "Causality"],
     "links": [
       {
         "label": "UAI",
@@ -287,7 +352,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Kirankumar Shiragur",
     "venue": "ICML",
     "year": "2023",
-    "tags": ["RT1", "Causal inference"],
+    "tags": ["RT1", "Causality"],
     "links": [
       {
         "label": "Conference link",
@@ -312,7 +377,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Themistoklis Gouleakis, Arnab Bhattacharyya",
     "venue": "ICML",
     "year": "2023",
-    "tags": ["RT1", "RT2", "Causal inference"],
+    "tags": ["RT1", "RT2", "Causality"],
     "links": [
       {
         "label": "Conference link",
@@ -337,7 +402,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Kirankumar Shiragur",
     "venue": "AISTATS",
     "year": "2023",
-    "tags": ["RT1", "Causal inference"],
+    "tags": ["RT1", "Causality"],
     "links": [
       {
         "label": "AISTATS",
@@ -362,7 +427,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Kirankumar Shiragur, Arnab Bhattacharyya",
     "venue": "NeurIPS",
     "year": "2022",
-    "tags": ["RT1", "Causal inference"],
+    "tags": ["RT1", "Causality"],
     "links": [
       {
         "label": "Conference link",
@@ -395,7 +460,7 @@
     "authors": "Arnab Bhattacharyya, <b class='author-highlight'>Davin Choo</b>, Rishikesh Gajjala, Sutanu Gayen, Yuhao Wang",
     "venue": "AISTATS",
     "year": "2022",
-    "tags": ["RT1", "Distribution learning"],
+    "tags": ["RT1", "Statistics"],
     "links": [
       {
         "label": "AISTATS",
@@ -416,7 +481,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Tommaso d'Orsi",
     "venue": "NeurIPS",
     "year": "2021",
-    "tags": ["RT1", "Statistical-Computational Gap"],
+    "tags": ["RT1", "Statistics"],
     "links": [
       {
         "label": "Conference link",
