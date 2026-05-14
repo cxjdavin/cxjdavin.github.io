@@ -17,7 +17,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Paul W. Goldberg, Nicholas Teh",
     "venue": "ICML",
     "year": "2026",
-    "tags": ["RT1", "RT2", "Fair division", "Query complexity"],
+    "tags": ["RT1", "RT2", "Social choice", "Query complexity"],
     "links": [
       {
         "label": "arXiv",
@@ -30,7 +30,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Winston Fu, Derek Khu, Tzeh Yuan Neoh, Tze-Yang Poon, Nicholas Teh",
     "venue": "ICML",
     "year": "2026",
-    "tags": ["RT1", "RT2", "Fair division", "Online"],
+    "tags": ["RT1", "RT2", "Social choice", "Online"],
     "links": [
       {
         "label": "arXiv",
@@ -234,7 +234,7 @@
     "authors": "<b class='author-highlight'>Davin Choo</b>, Yan Hao Ling, Warut Suksompong, Nicholas Teh, Jian Zhang",
     "venue": "ORL",
     "year": "2024",
-    "tags": ["RT1", "Fair division"],
+    "tags": ["RT1", "Social choice"],
     "links": [
       {
         "label": "ORL",
