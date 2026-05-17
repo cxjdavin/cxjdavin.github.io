@@ -10,92 +10,13 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="shortcut icon" src="images/taro-logo.png" />
+		<link rel="shortcut icon" src="favicon" />
 
-        <!-- For Icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
-    <style>
-      :root{
-        --accent:#4f9cff; --text:#111827;
-        --thead-bg:#f1f5f9; --row-bg:#fff; --row-alt-bg:#f8fafc; --row-hover-bg:#eef2ff;
-        --table-border:#e5e7eb; --chip-bg:rgba(0,0,0,.05);
-      }
-
-      #publications td.authors b {
-        color: rgb(0, 0, 0);
-      }
-
-      /* Filter chips — match tag pills */
-      #pub-filter-chips{ display:flex; flex-wrap:wrap; gap:.4rem; }
-      #pub-filter-chips label{
-        position:relative; display:inline-flex; align-items:center; justify-content:center;
-        font-size:.85em; padding:.2rem .5rem; border-radius:999px;
-        border:1px solid rgba(0,0,0,.15); background:var(--chip-bg); color:inherit;
-        cursor:pointer; user-select:none; transition:background .2s,color .2s,border-color .2s;
-      }
-      #pub-filter-chips input[type="checkbox"]{ position:absolute; opacity:0; pointer-events:none; width:0; height:0; }
-      #pub-filter-chips label:hover{ border-color:var(--accent); }
-      #pub-filter-chips label:has(input[type="checkbox"]:checked){ background:var(--accent); border-color:var(--accent); color:#fff; }
-
-      /* Table + borders that survive filtering */
-      #pub-table{ width:100%; border-collapse:separate; border-spacing:0; border:1px solid var(--table-border); color:var(--text); background:#fff; }
-      #pub-table thead th{ background:var(--thead-bg); padding:12px 14px; border-bottom:1px solid var(--table-border); text-align:left; }
-      #pub-table tbody td{ padding:12px 14px; border-bottom:1px solid var(--table-border); }
-      #pub-table tbody tr.is-visible{ background:var(--row-bg); }
-      #pub-table tbody tr.is-visible.is-odd{ background:var(--row-alt-bg); }
-      #pub-table tbody tr.is-visible:hover{ background:var(--row-hover-bg); }
-      #pub-table tbody tr.is-last td{ border-bottom:none; }
-      #pub-table tbody tr[hidden]{ display:none; }
-
-      /* Tag pills inside the table */
-      .pub-tag-pill{ display:inline-block; padding:.2rem .5rem; border-radius:999px; border:1px solid rgba(0,0,0,.15); font-size:.85em; margin:.1rem .25rem .1rem 0; background:var(--chip-bg); }
-
-      /* Text-only colors for tag pills and filter chips */
-      .pub-tag-pill[data-tag="RT1"],
-      #pub-filter-chips label[data-tag="RT1"] {
-        background: rgba(256, 192, 0, 0.5);
-        font-weight: 1000;
-      }
-
-      .pub-tag-pill[data-tag="RT2"],
-      #pub-filter-chips label[data-tag="RT2"] {
-        background: rgba(80, 150, 220, 0.5);
-        font-weight: 1000;
-      }
-
-      .pub-tag-pill[data-tag="RT3"],
-      #pub-filter-chips label[data-tag="RT3"] {
-        background: rgba(256, 0, 0, 0.5);
-        font-weight: 1000;
-      }
-
-      /* Keep pill backgrounds neutral */
-      .pub-tag-pill,
-      #pub-filter-chips label {
-        background: rgba(0, 0, 0, 0.05);
-        border: 1px solid rgba(0, 0, 0, 0.15);
-      }
-
-      /* Optional: slightly darken border on hover or when active */
-      #pub-filter-chips label:hover {
-        border-color: #4f9cff;
-      }
-      #pub-filter-chips label:has(input[type="checkbox"]:checked) {
-        font-weight: 600; /* emphasize selection */
-      }
-
-      .pub-title {
-        margin-bottom: 0.2rem;
-        font-weight: 1000;
-      }
-
-      .pub-tags-line {
-        margin-top: 0.1rem;
-      }
-    </style>
+		<!-- For Icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 	</head>
 	<body class="is-preload">
 
@@ -111,7 +32,7 @@
 							<li><a href="#service">Service</a></li>
 							<li><a href="#miscellaneous">Miscellaneous</a></li>
               <li><a href="#aboutme">About me</a></li>
-              <li><a href="tarolab.html"><b style="color:#7B61B3;">taro</b> <span style="color:#6FAF6B;">lab</span></a></li>
+              <li><a href="https://davinchoo.com/tarolab"><b style="color:#7B61B3;">taro</b> <span style="color:#6FAF6B;">lab</span></a></li>
               <li><a href="visitingsingapore.html">Visiting Singapore?</a></li>
 						</ul>
 					</nav>
@@ -126,20 +47,25 @@
 									<header class="major">
 										<div style="font-size:3rem">Davin Choo</div>
                     <h5>Postdoctoral Fellow @ Teamcore, Harvard SEAS<br>Young NUS Fellow<br>Incoming tenure-track Assistant Professor (Jan 2027) @ National University of Singapore (NUS)</a></h5>
+
 									</header>
-                  My research centers on developing <b>principled AI and algorithmic solutions for use-inspired, impact-driven problems</b>, organized around three synergistic thrusts that advance both foundations and real-world impact.
-                  </p>
-                  <p>
-                    <img src="images/research-flow.png" alt="Overview of research flow" width="100%" height="auto"/>
-                  </p>
-                  <ul align="left">
-                    <li><b style="color: rgb(256, 192, 0);">RT1 (Foundational AI/ML)</b>: Here, I mainly tackle problems in statistical machine learning and causal inference. I also have some works on clustering, SAT solving, and improving computational subtasks in modern ML pipelines.</li>
-                    <li><b style="color: rgb(80, 150, 220);">RT2 (Algorithms with imperfect advice)</b>: Here, I design methods that leverage imperfect, instance-specific information to overcome generic worst-case hardness barriers. As part of my <a href="files/davin-phd-thesis.pdf">PhD</a>, I developed the Test-and-Act framework for designing such <a href="https://algorithms-with-predictions.github.io/">learning-augmented algorithms</a>.
-                    <li><b style="color: rgb(256, 0, 0);">RT3 (AI+X)</b>: Here, I work with domain experts beyond Computer Science to principally model and improve real-world processes.</li>
-                  </ul>
 								</div>
-								<span class="image"><img src="images/head.jpg" alt="" /></span>
+								<div class="spotlight-images">
+									<span class="image image-head"><img src="images/head.jpg" alt="" /></span>
+									<span class="image image-logo"><a href="https://davinchoo.com/tarolab"><img src="images/taro-circle.png" alt="taro lab" /></a></span>
+								</div>
 							</div>
+              <p>
+              My research centers on developing <b>principled AI and algorithmic solutions for use-inspired, impact-driven problems</b>, organized around three synergistic thrusts that advance both foundations and real-world impact.
+              </p>
+              <p>
+                <img class="research-flow" src="images/research-flow.png" alt="Overview of research flow" />
+              </p>
+              <ul align="left">
+                <li><b style="color: rgb(256, 192, 0);">RT1 (Foundational AI/ML)</b>: Here, I mainly tackle problems in statistical machine learning and causal inference. I also have some works on clustering, SAT solving, and improving computational subtasks in modern ML pipelines.</li>
+                <li><b style="color: rgb(80, 150, 220);">RT2 (Algorithms with imperfect advice)</b>: Here, I design methods that leverage imperfect, instance-specific information to overcome generic worst-case hardness barriers. As part of my <a href="files/davin-phd-thesis.pdf">PhD</a>, I developed the Test-and-Act framework for designing such <a href="https://algorithms-with-predictions.github.io/">learning-augmented algorithms</a>.
+                <li><b style="color: rgb(256, 0, 0);">RT3 (AI+X)</b>: Here, I work with domain experts beyond Computer Science to principally model and improve real-world processes.</li>
+              </ul>
               <p>
               If you have challenging real-world problems, I'd love to hear about them!
               </p>
@@ -149,6 +75,7 @@
               I'm recruiting highly motivated PhD, Masters, and Undergrad students; it is okay if you have no prior research background as long as you are willing to learn and work hard.
               If you would like to work with me, please fill in this <a href="http://tiny.cc/join-taro">Google form</a> to get in touch.
               For prospective PhD students applying to NUS School of Computing (Jan 2027 intake), the application deadline is <b>June 15, 2026</b>: see details <a href="https://www.comp.nus.edu.sg/programmes/pg/phdcs/application/">here</a>.
+              Note: If you are interested in doing pure LLM or agentic AI research, I may not be the best fit.
               <p>
               <p>
               <b>Short bio (for talks, etc)</b>:
@@ -399,7 +326,6 @@ function renderRow(row){
             </script>
 
 						<!-- Talks -->
-            <style>td { vertical-align: middle; }</style>
 						<section id="talks" class="main special">
 							<header class="major">
 								<h2>Talks</h2>

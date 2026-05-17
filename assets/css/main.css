@@ -3031,7 +3031,7 @@ input, select, textarea {
 			.spotlight .image img {
 				display: block;
 				border-radius: 100%;
-				width: 16em;
+				width: 12em;
 			}
 
 		@media screen and (max-width: 980px) {
@@ -3341,18 +3341,6 @@ input, select, textarea {
 				#nav.alt ul li a {
 					font-size: 0.9em;
 				}
-
-		@media screen and (max-width: 736px) {
-
-			#nav {
-				display: none;
-			}
-
-				#nav + #main {
-					padding-top: 0;
-				}
-
-		}
 
 /* Main */
 
@@ -3814,3 +3802,58 @@ input, select, textarea {
 			}
 
 		}
+
+/* Mobile nav — keep visible (overrides theme hide at <=736px) */
+
+	@media screen and (max-width: 736px) {
+
+		#nav {
+			display: block;
+			position: fixed;
+			top: 0;
+			left: 50%;
+			-moz-transform: translateX(-50%);
+			-webkit-transform: translateX(-50%);
+			-ms-transform: translateX(-50%);
+			transform: translateX(-50%);
+			width: 100%;
+			max-width: 100%;
+			padding: 0.5em;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+			z-index: 10000;
+			background-color: rgba(247, 247, 247, 0.98);
+		}
+
+		#nav ul {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-moz-justify-content: center;
+			-webkit-justify-content: center;
+			-ms-justify-content: center;
+			justify-content: center;
+			gap: 0.35em;
+		}
+
+		#nav ul li {
+			margin: 0;
+		}
+
+		#nav ul li a {
+			font-size: 0.75em;
+			height: 2em;
+			line-height: 2em;
+			padding: 0 0.75em;
+		}
+
+		#nav + #main {
+			padding-top: 8em;
+		}
+
+	}

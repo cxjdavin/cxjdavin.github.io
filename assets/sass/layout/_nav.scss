@@ -87,10 +87,39 @@
 		}
 
 		@include breakpoint('<=small') {
-			display: none;
+			display: block;
+			position: fixed;
+			top: 0;
+			left: 50%;
+			@include vendor('transform', 'translateX(-50%)');
+			width: 100%;
+			max-width: 100%;
+			padding: 0.5em;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+			z-index: _misc(z-index-base);
+			background-color: transparentize(_palette(invert, bg-alt), 0.02);
+
+			ul {
+				@include vendor('display', 'flex');
+				@include vendor('flex-wrap', 'wrap');
+				@include vendor('justify-content', 'center');
+				gap: 0.35em;
+
+				li {
+					margin: 0;
+
+					a {
+						font-size: 0.75em;
+						height: 2em;
+						line-height: 2em;
+						padding: 0 0.75em;
+					}
+				}
+			}
 
 			& + #main {
-				padding-top: 0;
+				padding-top: 8em;
 			}
 		}
 	}

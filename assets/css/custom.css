@@ -1,0 +1,260 @@
+:root {
+	--accent: #4f9cff;
+	--text: #111827;
+	--thead-bg: #f1f5f9;
+	--row-bg: #fff;
+	--row-alt-bg: #f8fafc;
+	--row-hover-bg: #eef2ff;
+	--table-border: #e5e7eb;
+	--chip-bg: rgba(0, 0, 0, 0.05);
+}
+
+#publications td.authors b {
+	color: rgb(0, 0, 0);
+}
+
+/* Filter chips — match tag pills */
+#pub-filter-chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+}
+
+#pub-filter-chips label {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.85em;
+	padding: 0.2rem 0.5rem;
+	border-radius: 999px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	background: var(--chip-bg);
+	color: inherit;
+	cursor: pointer;
+	user-select: none;
+	transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+#pub-filter-chips input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+	width: 0;
+	height: 0;
+}
+
+#pub-filter-chips label:hover {
+	border-color: var(--accent);
+}
+
+#pub-filter-chips label:has(input[type="checkbox"]:checked) {
+	background: var(--accent);
+	border-color: var(--accent);
+	color: #fff;
+}
+
+/* Table + borders that survive filtering */
+#pub-table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 1px solid var(--table-border);
+	color: var(--text);
+	background: #fff;
+}
+
+#pub-table thead th {
+	background: var(--thead-bg);
+	padding: 12px 14px;
+	border-bottom: 1px solid var(--table-border);
+	text-align: left;
+}
+
+#pub-table tbody td {
+	padding: 12px 14px;
+	border-bottom: 1px solid var(--table-border);
+}
+
+#pub-table tbody tr.is-visible {
+	background: var(--row-bg);
+}
+
+#pub-table tbody tr.is-visible.is-odd {
+	background: var(--row-alt-bg);
+}
+
+#pub-table tbody tr.is-visible:hover {
+	background: var(--row-hover-bg);
+}
+
+#pub-table tbody tr.is-last td {
+	border-bottom: none;
+}
+
+#pub-table tbody tr[hidden] {
+	display: none;
+}
+
+/* Tag pills inside the table */
+.pub-tag-pill {
+	display: inline-block;
+	padding: 0.2rem 0.5rem;
+	border-radius: 999px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	font-size: 0.85em;
+	margin: 0.1rem 0.25rem 0.1rem 0;
+	background: var(--chip-bg);
+}
+
+/* Text-only colors for tag pills and filter chips */
+.pub-tag-pill[data-tag="RT1"],
+#pub-filter-chips label[data-tag="RT1"] {
+	background: rgba(256, 192, 0, 0.5);
+	font-weight: 1000;
+}
+
+.pub-tag-pill[data-tag="RT2"],
+#pub-filter-chips label[data-tag="RT2"] {
+	background: rgba(80, 150, 220, 0.5);
+	font-weight: 1000;
+}
+
+.pub-tag-pill[data-tag="RT3"],
+#pub-filter-chips label[data-tag="RT3"] {
+	background: rgba(256, 0, 0, 0.5);
+	font-weight: 1000;
+}
+
+/* Keep pill backgrounds neutral */
+.pub-tag-pill,
+#pub-filter-chips label {
+	background: rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: slightly darken border on hover or when active */
+#pub-filter-chips label:hover {
+	border-color: #4f9cff;
+}
+
+#pub-filter-chips label:has(input[type="checkbox"]:checked) {
+	font-weight: 600;
+}
+
+.pub-title {
+	margin-bottom: 0.2rem;
+	font-weight: 1000;
+}
+
+.pub-tags-line {
+	margin-top: 0.1rem;
+}
+
+.research-flow {
+	display: block;
+	width: 70%;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+#intro .spotlight {
+	--intro-head-size: calc(3rem + 3 * 0.9em * 1.65);
+	--intro-images-gap: 1em;
+	--intro-taro-width: calc(var(--intro-head-size) * 1678 / 2124);
+	--intro-images-width: calc(var(--intro-head-size) + var(--intro-images-gap) + var(--intro-taro-width));
+	position: relative;
+	align-items: flex-start;
+	margin-bottom: 2em;
+}
+
+#intro .spotlight .content {
+	flex: 1;
+	min-width: 0;
+	padding-right: calc(4em + var(--intro-images-width));
+	box-sizing: border-box;
+}
+
+#intro .spotlight .content header.major {
+	margin-bottom: 0;
+}
+
+#intro .spotlight .spotlight-images {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: row;
+	gap: var(--intro-images-gap);
+	align-items: center;
+}
+
+#intro .spotlight .spotlight-images .image-head {
+	position: static;
+	flex: none;
+	width: var(--intro-head-size);
+	height: var(--intro-head-size);
+	margin-left: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+	display: flex;
+}
+
+#intro .spotlight .spotlight-images .image-head img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 100%;
+}
+
+#intro .spotlight .spotlight-images .image-logo {
+	flex: none;
+	width: auto;
+	height: auto;
+	margin-left: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	display: block;
+}
+
+#intro .spotlight .spotlight-images .image-logo img {
+	display: block;
+	height: var(--intro-head-size);
+	width: auto;
+	object-fit: contain;
+	border-radius: 0;
+}
+
+#talks td {
+	vertical-align: middle;
+}
+
+@media screen and (max-width: 980px) {
+	#intro .spotlight {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	#intro .spotlight .content {
+		padding-right: 0;
+		width: 100%;
+	}
+
+	#intro .spotlight .spotlight-images {
+		position: static;
+		margin-bottom: 2em;
+	}
+
+	#intro .spotlight .spotlight-images .image-head {
+		width: 10em;
+		height: 10em;
+	}
+
+	#intro .spotlight .spotlight-images .image-logo img {
+		height: 10em;
+	}
+}
