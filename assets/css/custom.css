@@ -160,7 +160,8 @@
 }
 
 #intro .spotlight {
-	--intro-head-size: calc(3rem + 3 * 0.9em * 1.65);
+	--intro-image-scale: 1.25;
+	--intro-head-size: calc((3rem + 3 * 0.9em * 1.65) * var(--intro-image-scale));
 	--intro-images-gap: 1em;
 	--intro-taro-width: calc(var(--intro-head-size) * 1678 / 2124);
 	--intro-images-width: calc(var(--intro-head-size) + var(--intro-images-gap) + var(--intro-taro-width));
@@ -250,11 +251,11 @@
 	}
 
 	#intro .spotlight .spotlight-images .image-head {
-		width: 10em;
-		height: 10em;
+		width: calc(10em * var(--intro-image-scale, 1.25));
+		height: calc(10em * var(--intro-image-scale, 1.25));
 	}
 
 	#intro .spotlight .spotlight-images .image-logo img {
-		height: 10em;
+		height: calc(10em * var(--intro-image-scale, 1.25));
 	}
 }
